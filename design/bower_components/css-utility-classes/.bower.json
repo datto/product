@@ -1,0 +1,31 @@
+{
+  "name": "css-utility-classes",
+  "description": "A collection of useful utility classes to style your content.",
+  "main": "dist/css-utility-classes.css",
+  "authors": [
+    "John Barreiros <jbarreiros@datto.com>"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github-server.datto.lan:UI-Components/css-utility-classes.git"
+  },
+  "version": "0.0.4",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "8a3322b3e084254693155313ba97b13c0e85ef48"
+  },
+  "_source": "git@github-server.datto.lan:UI-Components/css-utility-classes.git",
+  "_target": "0.0.4",
+  "_originalSource": "git@github-server.datto.lan:UI-Components/css-utility-classes.git"
+}

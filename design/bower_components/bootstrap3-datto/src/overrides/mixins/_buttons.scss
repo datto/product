@@ -1,0 +1,88 @@
+//
+// Overrides the default mixins/_buttons.scss
+//
+
+// Custom mixin to force the disabled state to be grayed. Bootstrap, by default,
+// does not change the colors, just the opacity.
+@mixin button-disabled-override($color, $background) {
+  $border-color: $midnight-20;
+  $background-color: $midnight-20;
+
+  @if $background == transparent {
+    $background-color: transparent;
+    $color: $midnight-20;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: $background-color;
+      border-color: $border-color;
+    }
+  }
+}
+
+@mixin button-variant($color, $background, $border) {
+  $hover-background-color: darken($background, 9%);
+  $hover-border-color: darken($border, 9%);
+  $hover-color: $color;
+
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  @if $background == transparent {
+    $hover-background-color: $hover-border-color;
+    $hover-color: $white;
+  }
+
+  &:focus,
+  &.focus {
+    color: $hover-color;
+    background-color: $hover-background-color;
+    border-color: $hover-border-color;
+  }
+
+  &:hover {
+    color: $hover-color;
+    background-color: $hover-background-color;
+    border-color: $hover-border-color;
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $hover-background-color;
+    border-color: $hover-border-color;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $hover-color;
+      background-color: $hover-background-color;
+      border-color: $hover-border-color;
+    }
+  }
+
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+
+  @include button-disabled-override($color, $background);
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}

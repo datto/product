@@ -1,0 +1,34 @@
+//
+// Overrides to button styles.
+// Also see overrides/mixins/_buttons.scss
+//
+
+.btn {
+  font-size: $font-size-small;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    opacity: 1;
+  }
+}
+
+.btn-link {
+  &:hover,
+  &:focus {
+    color: $midnight;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    color: $midnight-20;
+
+    &:hover,
+    &:focus {
+      color: $midnight-20;
+    }
+  }
+}

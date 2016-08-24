@@ -1,0 +1,11 @@
+//
+// Text color classes
+//
+
+html {
+  @each $name, $color in $colors-map {
+    .u-text-#{$name} {
+      color: $color;
+    }
+  }
+}

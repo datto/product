@@ -1,0 +1,30 @@
+h1,
+.h1 {
+  color: $midnight-80;
+  font-family: $datto-font-family-bold-condensed;
+  line-height: 36px;
+}
+
+h2,
+.h2 {
+  color: $midnight-50;
+  font-family: $datto-font-family-bold-condensed;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  line-height: 24px;
+  text-transform: none;
+}
+
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+  line-height: 20px;
+  text-transform: none;
+}

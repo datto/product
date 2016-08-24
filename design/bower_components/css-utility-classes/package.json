@@ -1,0 +1,37 @@
+{
+  "name": "css-utility-classes",
+  "version": "0.0.4",
+  "description": "A collection of useful utility classes to style your content.",
+  "main": "dist/css-utility-classes.css",
+  "config": {
+    "sass_opts": "--source-map-embed true --out-file tmp/tmp.css"
+  },
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "npm run lint:sass && npm run build:sass",
+    "postbuild": "npm run minify:css",
+    "start": "npm run watch:sass",
+    "clean": "rimraf dist/*",
+    "lint:sass": "sass-lint src/**/*.scss -v -q",
+    "build:sass": "node-sass $npm_package_config_sass_opts src/css-utility-classes.scss dist/css-utility-classes.css",
+    "minify:css": "cleancss -o dist/css-utility-classes.min.css dist/css-utility-classes.css",
+    "watch:sass": "chokidar 'src/*.scss' -c 'npm run build:css'"
+  },
+  "contributors": [
+    "John Barreiros <barientos@datto.com>"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "clean-css": "^3.4.13",
+    "node-sass": "^3.7.0",
+    "rimraf": "^2.5.2",
+    "sass-lint": "^1.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-server.datto.lan:UI-Components/css-utility-classes.git"
+  }
+}

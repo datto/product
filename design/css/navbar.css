@@ -1,0 +1,57 @@
+.brand-nav {
+  background-color: #b0d156;
+  padding: 0;
+  border: 0;
+  margin-bottom: 0;
+  min-height: 97px;
+}
+
+.nav1 {
+  margin: 0 21.5% 0 20%;
+  padding-top: 32px;
+}
+
+.brand-nav .nav1>li {
+    padding: .5rem 3rem 0 10px;
+    float: left;
+    list-style-type: none;
+    -webkit-transition: padding .5s ease-in-out;
+    transition: padding .5s ease-in-out;
+}
+
+.brand-nav .nav1>li {
+    position: relative;
+    display: block;
+}
+
+.brand-nav .nav1 > li > a {
+    padding: 0 0 0 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.brand-nav .active {
+    color: #002a3a !important;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 90px;
+    margin: -2px 0 2px;
+    padding: 0px 10px 0px 4rem;
+    width: 6.25rem;
+    float: left;
+}
+
+.hex-icon {
+    background: url("http://backupify.github.io/styleguide/images/assets/images/hex-icon.svg") no-repeat center;
+    padding: 15px;
+}
+
+.hex-icon1 {
+    background: url("http://backupify.github.io/styleguide/images/assets/images/hex-icon-active.svg") no-repeat center !important;
+    padding: 15px;
+}
