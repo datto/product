@@ -1,0 +1,38 @@
+{
+  "name": "bootstrap3-datto",
+  "version": "0.0.13",
+  "description": "Custom Bootstrap 3 build styled in the Datto brand",
+  "main": "dist/js/bootstrap3-datto.js",
+  "config": {
+    "bs_path": "bower_components/bootstrap-sass/assets/javascripts",
+    "font_path": "bower_components/datto-font/dist/fonts"
+  },
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "npm-run-all build:* copy:*",
+    "postbuild": "npm run minify:css",
+    "start": "npm run watch:sass",
+    "clean": "rimraf dist/*",
+    "build:css": "node-sass src/bootstrap3-datto.scss dist/css/bootstrap3-datto.css",
+    "copy:js": "mkdir -p dist/js && cp $npm_package_config_bs_path/bootstrap.js dist/js/bootstrap3-datto.js && cp $npm_package_config_bs_path/bootstrap.min.js dist/js/bootstrap3-datto.min.js",
+    "copy:fonts": "cp -R $npm_package_config_font_path dist/",
+    "minify:css": "cleancss -o dist/css/bootstrap3-datto.min.css dist/css/bootstrap3-datto.css",
+    "watch:sass": "chokidar 'src/**/*.scss' -c 'npm run build:css'"
+  },
+  "contributors": [
+    "John Barreiros <barientos@datto.com>"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "clean-css": "^3.4.12",
+    "node-sass": "^3.7.0",
+    "npm-run-all": "^2.1.1",
+    "rimraf": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-server.datto.lan:UI-Components/bootstrap3-datto.git"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "datto-font",
+  "description": "A Bower package for including the Datto font in your project",
+  "main": [
+    "src/sass/datto-font.scss"
+  ],
+  "authors": [
+    "John Barreiros <barientos@datto.com>"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github-server.datto.lan:UI-Components/datto-font.git"
+  },
+  "version": "0.0.4",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "649151826aa54b9720589379a3c4fa7ddabbcf2d"
+  },
+  "_source": "git@github-server.datto.lan:UI-Components/datto-font.git",
+  "_target": "0.0.4",
+  "_originalSource": "git@github-server.datto.lan:UI-Components/datto-font.git"
+}

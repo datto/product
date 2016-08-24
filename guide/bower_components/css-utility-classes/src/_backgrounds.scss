@@ -1,0 +1,17 @@
+//
+// Background classes
+//
+// Creates a class for each color in the Datto brand color palette.
+//
+
+html {
+  @each $name, $color in $colors-map {
+    .u-bg-#{$name} {
+      background-color: $color;
+    }
+  }
+
+  .u-bg-transparent {
+    background-color: transparent;
+  }
+}
