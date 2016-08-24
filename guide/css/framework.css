@@ -4,8 +4,6 @@ body {
   color: #1C3E4C;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   background-color: #fff !important;
-  overflow-y: -moz-scrollbars-vertical;
-  overflow-y: scroll;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, p {
@@ -411,9 +409,8 @@ h5.bold {
         margin-left: 10px;
         font-size: 28px !important; }
     .style-app .header .logo-box {
-      padding: 20px 0;
-      text-align: left;
-      margin-left: 10%; }
+      padding: 20px 0 20px 15px;
+      text-align: left; }
       .style-app .header .logo-box .logo {
         display: block;
         fill: #199ED9; }
@@ -463,20 +460,21 @@ h5.bold {
   .style-app .top-nav {
     text-align: right;
     height: 75px;
-    margin-right: 15%; }
+    margin-right: 20px; }
   .style-app .left-nav {
     overflow: hidden;
     background-color: white;
     box-sizing: border-box;
     display: block;
     top: 75px;
-    left: 10%;
+    left: 0;
     height: 100%;
-    width: 12.5%;
+    width: 240px;
     border: 1px solid #e0e6ed;
     border-top: 0;
     border-right: 0;
-    position: fixed; }
+    position: fixed;
+    z-index: 10; }
     .style-app .left-nav .menu {
       position: relative; }
       .style-app .left-nav .menu .menu-item {
@@ -532,9 +530,9 @@ h5.bold {
     box-sizing: border-box;
     display: block;
     top: 75px;
-    left: 22.5%;
+    left: 240px;
     height: 100%;
-    width: 12.5%;
+    min-width: 220px;
     position: fixed;
     padding-top: 10px;
     border-right: 1px solid #e0e6ed; }
@@ -566,7 +564,7 @@ h5.bold {
       position: absolute; }
       .style-app .nav-white .nav-footer .icon {
         display: inline-block;
-        padding: 0 15px; }
+        padding: 0 7.5px; }
         .style-app .nav-white .nav-footer .icon svg {
           fill: #B3BEC3;
           -webkit-transition-duration: 0.15s;
@@ -588,8 +586,7 @@ h5.bold {
         font: 16px "DattoDin", "Helvetica Neue", sans-serif; }
   .style-app .main-content {
     padding-top: 50px;
-    box-sizing: border-box;
-    border-right: 1px solid #e0e6ed; }
+    box-sizing: border-box; }
     @media screen and (min-width: 768px) {
       .style-app .main-content.subnav {
         padding-left: 37.5%; }
@@ -601,7 +598,7 @@ h5.bold {
       .style-app .main-content.no-subnav {
         padding-left: 12.5% !important; } }
     .style-app .main-content .content {
-      max-width: 960px;
+      max-width: 860px;
       margin: 0 auto;
       box-sizing: border-box;
       padding: 40px 80px 60px 80px; }
