@@ -5,7 +5,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   background-color: #fff !important;
   overflow-y: -moz-scrollbars-vertical;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, p {
   margin-top: 0;
@@ -52,6 +53,18 @@ h5.bold {
 .d-inlineBlock {
   display: inline-block; }
 
+.f-right {
+  float: right; }
+
+.f-left {
+  float: left; }
+
+.valign-center {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: relative; }
+
 .fontSize-xxxxl {
   font-size: 46px; }
 
@@ -94,6 +107,9 @@ h5.bold {
 .mt-xl {
   margin-top: 80px; }
 
+.mb-0 {
+  margin-bottom: 0; }
+
 .mb-s {
   margin-bottom: 10px; }
 
@@ -105,6 +121,18 @@ h5.bold {
 
 .mb-xl {
   margin-bottom: 80px; }
+
+.mr-s {
+  margin-right: 10px; }
+
+.mr-m {
+  margin-right: 20px; }
+
+.mr-l {
+  margin-right: 40px; }
+
+.mr-xl {
+  margin-right: 80px; }
 
 .mtb-s {
   margin-top: 10px;
@@ -193,6 +221,14 @@ h5.bold {
 
 .borderColor-smoke {
   border-color: #e0e6ed; }
+
+.disabled-text {
+  color: #D9DFE1;
+  cursor: not-allowed; }
+  .disabled-text:hover {
+    color: #D9DFE1;
+    cursor: not-allowed;
+    text-decoration: none; }
 
 .midnight {
   color: #002A3A; }
@@ -357,57 +393,31 @@ h5.bold {
 
 .style-app {
   box-sizing: border-box; }
-  .style-app .secondary-nav {
-    overflow: hidden;
-    background-color: #f9fafc;
-    border-right: 1px solid #e0e6ed;
-    box-sizing: border-box;
-    display: block;
-    top: 0;
-    left: 17.5%;
-    height: 100%;
-    width: 12.5%;
+  .style-app .header {
+    height: 75px;
+    background: white;
+    border-bottom: 1px solid #e0e6ed;
+    width: 100%;
     position: fixed;
-    padding-top: 30px; }
-    .style-app .secondary-nav dd {
-      display: block;
-      margin: 0;
-      padding: 20px 40px; }
-      .style-app .secondary-nav dd h5 {
-        font-size: 15px;
-        text-transform: uppercase; }
-      .style-app .secondary-nav dd a {
-        display: block;
-        font-size: 17px;
+    z-index: 999; }
+    .style-app .header .product {
+      height: 75px;
+      position: relative; }
+      .style-app .header .product h1 {
+        margin: 0;
         font-family: "DattoDin", sans-serif;
-        padding: 8px 0;
-        color: #4E6973;
-        text-decoration: none; }
-        .style-app .secondary-nav dd a.active {
-          color: #1fb6ff; }
-  .style-app .nav-white {
-    height: 100%;
-    border-right: 1px solid #e0e6ed; }
-  .style-app .style-nav {
-    overflow: hidden;
-    background-color: white;
-    box-sizing: border-box;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 17.5%;
-    position: fixed; }
-    .style-app .style-nav .logo-box {
-      padding: 60px 0;
-      border-right: 1px solid #e0e6ed;
-      border-bottom: 1px solid #e0e6ed;
-      text-align: center; }
-      .style-app .style-nav .logo-box .logo {
+        border-left: 1px solid #e0e6ed;
+        padding-left: 20px;
+        margin-left: 10px;
+        font-size: 28px !important; }
+    .style-app .header .logo-box {
+      padding: 20px 0;
+      text-align: left;
+      margin-left: 10%; }
+      .style-app .header .logo-box .logo {
         display: block;
-        fill: #199ED9;
-        margin-bottom: 10px; }
-      .style-app .style-nav .logo-box .label {
+        fill: #199ED9; }
+      .style-app .header .logo-box .label {
         display: block;
         font-family: "DattoDin", sans-serif;
         font-weight: 500;
@@ -415,9 +425,9 @@ h5.bold {
         letter-spacing: 3px;
         color: #8492a6;
         text-transform: uppercase; }
-        .style-app .style-nav .logo-box .label label {
+        .style-app .header .logo-box .label label {
           position: relative; }
-          .style-app .style-nav .logo-box .label label:after {
+          .style-app .header .logo-box .label label:after {
             content: ">";
             font: 18px "DattoDin", "Helvetica Neue", sans-serif;
             color: #ccc;
@@ -430,7 +440,7 @@ h5.bold {
             top: 12px;
             position: absolute;
             pointer-events: none; }
-        .style-app .style-nav .logo-box .label select {
+        .style-app .header .logo-box .label select {
           border: 1px solid #e0e6ed;
           -webkit-appearance: none;
           -moz-appearance: none;
@@ -447,29 +457,46 @@ h5.bold {
           border-top-right-radius: 0px !important;
           border-bottom-left-radius: 0px !important;
           border-bottom-right-radius: 0px !important; }
-          .style-app .style-nav .logo-box .label select:focus {
+          .style-app .header .logo-box .label select:focus {
             outline: none;
             border-bottom: 4px solid #199ED9; }
-    .style-app .style-nav .menu {
+  .style-app .top-nav {
+    text-align: right;
+    height: 75px;
+    margin-right: 15%; }
+  .style-app .left-nav {
+    overflow: hidden;
+    background-color: white;
+    box-sizing: border-box;
+    display: block;
+    top: 75px;
+    left: 10%;
+    height: 100%;
+    width: 12.5%;
+    border: 1px solid #e0e6ed;
+    border-top: 0;
+    border-right: 0;
+    position: fixed; }
+    .style-app .left-nav .menu {
       position: relative; }
-      .style-app .style-nav .menu .menu-item {
+      .style-app .left-nav .menu .menu-item {
         box-sizing: border-box;
         padding: 0;
         margin: 0;
         border-right: 1px solid #e0e6ed; }
-        .style-app .style-nav .menu .menu-item.active {
+        .style-app .left-nav .menu .menu-item.active {
           background-color: #f9fafc;
           border-right: 0; }
-          .style-app .style-nav .menu .menu-item.active.no-subnav {
+          .style-app .left-nav .menu .menu-item.active.no-subnav {
             background-color: #fff;
             border-right: 1px; }
-      .style-app .style-nav .menu dl {
+      .style-app .left-nav .menu dl {
         border-bottom: 1px solid #e0e6ed;
         box-sizing: border-box; }
-        .style-app .style-nav .menu dl dt {
+        .style-app .left-nav .menu dl dt {
           position: relative;
           box-sizing: border-box; }
-        .style-app .style-nav .menu dl a.link {
+        .style-app .left-nav .menu dl a.link {
           text-decoration: none;
           box-sizing: border-box;
           color: #3c4858;
@@ -478,59 +505,91 @@ h5.bold {
           padding: 15px 25px;
           font-size: 20px;
           font-weight: normal; }
-          .style-app .style-nav .menu dl a.link.active {
+          .style-app .left-nav .menu dl a.link.active {
             color: #1fb6ff; }
-          .style-app .style-nav .menu dl a.link.disabled {
+          .style-app .left-nav .menu dl a.link.disabled {
             color: #ccc;
             cursor: not-allowed; }
-        .style-app .style-nav .menu dl dd {
+        .style-app .left-nav .menu dl dd {
           display: block;
           margin: 0;
           padding: 20px 40px;
           background: #f9fafc;
           border-top: 1px solid #e0e6ed;
           border-right: 1px solid #f9fafc; }
-          .style-app .style-nav .menu dl dd a {
+          .style-app .left-nav .menu dl dd a {
             display: block;
             font-size: 17px;
             font-family: "DattoDin", sans-serif;
             padding: 10px 0;
             color: #8492a6;
             text-decoration: none; }
-            .style-app .style-nav .menu dl dd a.active {
+            .style-app .left-nav .menu dl dd a.active {
               color: #1fb6ff; }
-    .style-app .style-nav .nav-footer {
+  .style-app .left-nav-secondary {
+    overflow: hidden;
+    background-color: #f9fafc;
+    box-sizing: border-box;
+    display: block;
+    top: 75px;
+    left: 22.5%;
+    height: 100%;
+    width: 12.5%;
+    position: fixed;
+    padding-top: 10px;
+    border-right: 1px solid #e0e6ed; }
+    .style-app .left-nav-secondary dd {
+      display: block;
+      margin: 0;
+      padding: 20px 40px; }
+      .style-app .left-nav-secondary dd h5 {
+        font-size: 15px;
+        text-transform: uppercase; }
+      .style-app .left-nav-secondary dd a {
+        display: block;
+        font-size: 17px;
+        font-family: "DattoDin", sans-serif;
+        color: #4E6973;
+        text-decoration: none; }
+        .style-app .left-nav-secondary dd a.active {
+          color: #1fb6ff; }
+  .style-app .nav-white {
+    height: 100%;
+    border-right: 1px solid #e0e6ed; }
+    .style-app .nav-white .nav-footer {
       box-sizing: border-box;
-      padding-bottom: 40px;
+      padding-bottom: 110px;
       bottom: 0;
       left: 0;
       text-align: center;
       width: 100%;
       position: absolute; }
-      .style-app .style-nav .nav-footer .icon {
+      .style-app .nav-white .nav-footer .icon {
         display: inline-block;
         padding: 0 15px; }
-        .style-app .style-nav .nav-footer .icon svg {
+        .style-app .nav-white .nav-footer .icon svg {
           fill: #B3BEC3;
           -webkit-transition-duration: 0.15s;
           transition-duration: 0.15s; }
-        .style-app .style-nav .nav-footer .icon .dribbble:hover {
+        .style-app .nav-white .nav-footer .icon .dribbble:hover {
           fill: #ea4c89;
           -webkit-transform: scale(1.2);
           transform: scale(1.2); }
-        .style-app .style-nav .nav-footer .icon .twitter:hover {
+        .style-app .nav-white .nav-footer .icon .twitter:hover {
           fill: #55acee;
           -webkit-transform: scale(1.2);
           transform: scale(1.2); }
-        .style-app .style-nav .nav-footer .icon .github:hover {
+        .style-app .nav-white .nav-footer .icon .github:hover {
           fill: #273444;
           -webkit-transform: scale(1.2);
           transform: scale(1.2); }
-      .style-app .style-nav .nav-footer .hiring {
+      .style-app .nav-white .nav-footer .hiring {
         display: block;
         font: 16px "DattoDin", "Helvetica Neue", sans-serif; }
   .style-app .main-content {
-    box-sizing: border-box; }
+    padding-top: 50px;
+    box-sizing: border-box;
+    border-right: 1px solid #e0e6ed; }
     @media screen and (min-width: 768px) {
       .style-app .main-content.subnav {
         padding-left: 37.5%; }

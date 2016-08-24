@@ -6,6 +6,7 @@ body
 	background-color: #fff !important
 	overflow-y: -moz-scrollbars-vertical
 	overflow-y: scroll
+	-webkit-font-smoothing: antialiased
 
 h1, h2, h3, h4, h5, p
 	margin-top: 0
@@ -49,6 +50,17 @@ h5.bold
 .d-inlineBlock
 	display: inline-block
 
+.f-right
+	float: right
+.f-left
+	float: left
+
+.valign-center
+	top: 50%
+	-webkit-transform: translateY(-50%)
+	transform: translateY(-50%)
+	position: relative
+
 .fontSize-xxxxl
 	font-size: 46px
 .fontSize-xxxl
@@ -78,6 +90,8 @@ h5.bold
 	margin-top: 40px
 .mt-xl
 	margin-top: 80px
+.mb-0
+	margin-bottom: 0
 .mb-s
 	margin-bottom: 10px
 .mb-m
@@ -86,6 +100,14 @@ h5.bold
 	margin-bottom: 40px
 .mb-xl
 	margin-bottom: 80px
+.mr-s
+	margin-right: 10px
+.mr-m
+	margin-right: 20px
+.mr-l
+	margin-right: 40px
+.mr-xl
+	margin-right: 80px
 
 .mtb-s
 	margin-top: 10px
@@ -159,6 +181,14 @@ h5.bold
 
 .borderColor-smoke
 	border-color: #e0e6ed
+
+.disabled-text
+	color: #D9DFE1
+	cursor: not-allowed
+	&:hover
+		color: #D9DFE1
+		cursor: not-allowed
+		text-decoration: none
 
 .midnight
 	color: #002A3A
@@ -324,57 +354,31 @@ h5.bold
 
 .style-app
 	box-sizing: border-box
-	.secondary-nav
-		overflow: hidden
-		background-color: #f9fafc
-		border-right: 1px solid #e0e6ed
-		box-sizing: border-box
-		display: block
-		top: 0
-		left: 17.5%
-		height: 100%
-		width: 12.5%
+	.header
+		height: 75px
+		background: white
+		border-bottom: 1px solid #e0e6ed
+		width: 100%
 		position: fixed
-		padding-top: 30px
-
-		dd 
-			display: block
-			margin: 0
-			padding: 20px 40px
-			h5
-				font-size: 15px
-				text-transform: uppercase
-			a 
-				display: block
-				font-size: 17px
+		z-index: 999
+		.product
+			height: 75px
+			position: relative
+			h1
+				margin: 0
 				font-family: "DattoDin", sans-serif
-				padding: 8px 0
-				color: #4E6973
-				text-decoration: none
-				&.active
-					color: #1fb6ff
-	.nav-white
-		height: 100%
-		border-right: 1px solid #e0e6ed
-	.style-nav
-		overflow: hidden
-		background-color: white
-		box-sizing: border-box
-		display: block
-		top: 0
-		left: 0
-		height: 100%
-		width: 17.5%
-		position: fixed
+				border-left: 1px solid #e0e6ed
+				padding-left: 20px
+				margin-left: 10px
+				font-size: 28px !important
+
 		.logo-box
-			padding: 60px 0
-			border-right: 1px solid #e0e6ed
-			border-bottom: 1px solid #e0e6ed
-			text-align: center
+			padding: 20px 0
+			text-align: left
+			margin-left: 10%
 			.logo
 				display: block
 				fill: #199ED9
-				margin-bottom: 10px
 			.label
 				display: block
 				font-family: "DattoDin", sans-serif
@@ -418,7 +422,25 @@ h5.bold
 					&:focus
 						outline: none
 						border-bottom: 4px solid #199ED9
-		
+	.top-nav
+		text-align: right
+		height: 75px
+		margin-right: 15%
+
+	.left-nav
+		overflow: hidden
+		background-color: white
+		box-sizing: border-box
+		display: block
+		top: 75px
+		left: 10%
+		height: 100%
+		width: 12.5%
+		border: 1px solid #e0e6ed
+		border-top: 0
+		border-right: 0
+		position: fixed
+
 		.menu
 			position: relative
 			.menu-item
@@ -470,9 +492,41 @@ h5.bold
 						&.active
 							color: #1fb6ff
 
+	.left-nav-secondary
+		overflow: hidden
+		background-color: #f9fafc
+		box-sizing: border-box
+		display: block
+		top: 75px
+		left: 22.5%
+		height: 100%
+		width: 12.5%
+		position: fixed
+		padding-top: 10px
+		border-right: 1px solid #e0e6ed
+
+		dd 
+			display: block
+			margin: 0
+			padding: 20px 40px
+			h5
+				font-size: 15px
+				text-transform: uppercase
+			a 
+				display: block
+				font-size: 17px
+				font-family: "DattoDin", sans-serif
+				color: #4E6973
+				text-decoration: none
+				&.active
+					color: #1fb6ff
+	.nav-white
+		height: 100%
+		border-right: 1px solid #e0e6ed
+	
 		.nav-footer
 			box-sizing: border-box
-			padding-bottom: 40px
+			padding-bottom: 110px
 			bottom: 0
 			left: 0
 			text-align: center
@@ -505,7 +559,9 @@ h5.bold
 				font: 16px "DattoDin", "Helvetica Neue", sans-serif
 		
 	.main-content
+		padding-top: 50px
 		box-sizing: border-box
+		border-right: 1px solid #e0e6ed
 		@media screen and (min-width: 768px)
 			&.subnav
 				padding-left: 37.5%
