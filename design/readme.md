@@ -3,7 +3,7 @@
 
 As Datto continues to grow globally, both as a suite of products and a company, one challenge we are faced with is learning how to refine the Datto brand identity and apply it cohesively to each of our products. We created this product styleguide to act as a central location where we house a live inventory of UI components, brand guidelines, brand assets, code snippets, developer guidelines and more. Anyone working on the Datto product is encouraged to stay familiar with this styleguide and help ensure that it is kept up-to-date.
 
-So, what does it look like? Check out the live site [example page](http://github-server.datto.lan/pages/UI-Components/product-design-guide/index.html).
+So, what does it look like? Check out the live site [example page](http://product.datto.com/design).
 
 ## Related repos
 http://github-server.datto.lan/UI-Components/datto-font
