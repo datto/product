@@ -585,7 +585,7 @@ h5.bold {
         display: block;
         font: 16px "DattoDin", "Helvetica Neue", sans-serif; }
   .style-app .main-content {
-    padding-top: 50px;
+    padding-top: 60px;
     box-sizing: border-box; }
     @media screen and (min-width: 768px) {
       .style-app .main-content.subnav {
