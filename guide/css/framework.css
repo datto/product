@@ -25,6 +25,7 @@ h2 {
 
 h3 {
   font-family: "DattoDin" !important;
+  font-weight: bold;
   font-size: 24px !important;
   line-height: 30px !important;
   text-transform: capitalize !important;
@@ -32,6 +33,7 @@ h3 {
 
 h4 {
   font-size: 18px !important;
+  font-weight: bold;
   line-height: 26px !important;
   text-transform: capitalize !important;
   color: #002A3A !important; }
