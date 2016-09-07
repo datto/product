@@ -291,6 +291,26 @@ p {
   background-color: #FFC82C;
   color: white; }
 
+input:focus, textarea:focus, keygen:focus, select:focus {
+  outline: 0; }
+
+input {
+  border-radius: 2px;
+  border: 1px solid #B3BEC3;
+  border-bottom: 3px solid #CDD4D7; }
+  input:focus {
+    border-bottom: 3px solid #199ED9;
+    border-radius: 0 0 4px 4px;
+    border-collapse: collapse; }
+
+label {
+  display: block;
+  font-family: "DattoDin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 15px;
+  color: #355460; }
+
 .input-s {
   font-size: 14px;
   height: 30px;

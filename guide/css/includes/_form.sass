@@ -1,3 +1,26 @@
+@import 'variables'
+
+input:focus, textarea:focus, keygen:focus, select:focus
+	outline: 0
+
+input
+	border-radius: 2px
+	border: 1px solid $midnight-30
+	border-bottom: 3px solid $midnight-20
+
+	&:focus 
+		border-bottom: 3px solid $blue
+		border-radius: 0 0 4px 4px
+		border-collapse: collapse
+label
+	display: block
+	font-family: $DattoDin
+	text-transform: capitalize
+	font-weight: bold
+	font-size: 15px
+	color: $midnight-80
+
+
 .input-s
 	font-size: 14px
 	height: 30px
