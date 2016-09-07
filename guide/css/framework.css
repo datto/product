@@ -1423,7 +1423,8 @@ ul {
           margin-right: 8px; }
       .style-app .main-content .panel .color-card {
         width: 100%;
-        height: 80px; }
+        height: 80px;
+        box-sizing: border-box; }
         .style-app .main-content .panel .color-card span {
           display: block; }
     .style-app .main-content .codePanel {
