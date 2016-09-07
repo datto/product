@@ -1,0 +1,316 @@
+.style-app
+	box-sizing: border-box
+	.header
+		height: 75px
+		background: white
+		border-bottom: 1px solid #e0e6ed
+		width: 100%
+		position: fixed
+		z-index: 999
+		&.container
+			position: relative
+			max-width: 1200px
+			margin: 0 auto
+		.product
+			height: 75px
+			position: relative
+			h1
+				margin: 0
+				font-family: "DattoDin", sans-serif
+				border-left: 1px solid #e0e6ed
+				padding-left: 20px
+				margin-left: 10px
+				font-size: 28px !important
+
+		.logo-box
+			padding: 20px 0 20px 15px
+			text-align: left
+			.logo
+				display: block
+				fill: #199ED9
+			.label
+				display: block
+				font-family: "DattoDin", sans-serif
+				font-weight: 500
+				font-size: 12px
+				letter-spacing: 3px
+				color: #8492a6
+				text-transform: uppercase
+				label
+					position: relative
+					&:after
+						content: '>'
+						font: 18px "DattoDin", "Helvetica Neue", sans-serif
+						color: #ccc
+						font-weight: bold
+						-webkit-transform: rotate(90deg)
+						-moz-transform: rotate(90deg)
+						-ms-transform: rotate(90deg)
+						transform: rotate(90deg)
+						right: 8px 
+						top: 12px
+						position: absolute
+						pointer-events: none
+				select
+					border: 1px solid #e0e6ed
+					-webkit-appearance: none
+					-moz-appearance: none
+					appearance: none
+					padding: 10px 20px 10px 10px
+					border-bottom: 4px solid #e0e6ed
+					background: #fff
+					font-family: "DattoDin", sans-serif
+					text-transform: capitalize
+					color: #8492a6
+					font-size: 16px
+					font-weight: 300
+					border-top-left-radius: 0px !important
+					border-top-right-radius: 0px !important
+					border-bottom-left-radius: 0px !important
+					border-bottom-right-radius: 0px !important
+					&:focus
+						outline: none
+						border-bottom: 4px solid #199ED9
+	.top-nav
+		text-align: right
+		height: 75px
+		margin-right: 20px
+		a.active
+			color: #1fb6ff
+			text-decoration: none
+
+	.left-nav
+		overflow: hidden
+		background-color: white
+		box-sizing: border-box
+		display: block
+		top: 75px
+		left: 0
+		height: 100%
+		width: 240px
+		border: 1px solid #e0e6ed
+		border-top: 0
+		border-right: 0
+		position: fixed
+		z-index: 10
+
+		.menu
+			position: relative
+			.menu-item
+				box-sizing: border-box
+				padding: 0
+				margin: 0
+				border-right: 1px solid #e0e6ed
+				&.active
+					background-color: #f9fafc
+					border-right: 0
+					&.no-subnav
+						background-color: #fff
+						border-right: 1px
+			dl
+				border-bottom: 1px solid #e0e6ed
+				box-sizing: border-box
+				dt 
+					position: relative
+					box-sizing: border-box
+				a.link
+					text-decoration: none
+					box-sizing: border-box
+					color: #3c4858
+					font-family: "DattoDin", sans-serif
+					display: block
+					padding: 15px 25px
+					font-size: 20px 
+					font-weight: normal
+					&.active
+						color: #1fb6ff
+					&.disabled
+						color: #ccc
+						cursor: not-allowed
+				dd 
+					display: block
+					margin: 0
+					padding: 20px 40px
+					background: #f9fafc
+					border-top: 1px solid #e0e6ed
+					border-right: 1px solid #f9fafc
+
+					a 
+						display: block
+						font-size: 17px
+						font-family: "DattoDin", sans-serif
+						padding: 10px 0
+						color: #8492a6
+						text-decoration: none
+						&.active
+							color: #1fb6ff
+
+	.left-nav-secondary
+		overflow: hidden
+		background-color: #f9fafc
+		box-sizing: border-box
+		display: block
+		top: 75px
+		left: 240px
+		height: 100%
+		min-width: 220px
+		position: fixed
+		padding-top: 10px
+		border-right: 1px solid #e0e6ed
+
+		dd 
+			display: block
+			margin: 0
+			padding: 20px 40px
+			h5
+				font-size: 15px
+				text-transform: uppercase
+			a 
+				display: block
+				font-size: 17px
+				font-family: "DattoDin", sans-serif
+				color: #4E6973
+				text-decoration: none
+				&.active
+					color: #1fb6ff
+	.nav-white
+		height: 100%
+		border-right: 1px solid #e0e6ed
+	
+		.nav-footer
+			box-sizing: border-box
+			padding-bottom: 110px
+			bottom: 0
+			left: 0
+			text-align: center
+			width: 100%
+			position: absolute
+			.icon
+				display: inline-block
+				padding: 0 7.5px
+				svg 
+					fill: #B3BEC3
+					-webkit-transition-duration: .15s
+					transition-duration: .15s
+				.dribbble
+					&:hover
+						fill: #ea4c89
+						-webkit-transform: scale(1.2)
+						transform: scale(1.2)
+				.twitter
+					&:hover
+						fill: #55acee
+						-webkit-transform: scale(1.2)
+						transform: scale(1.2)
+				.github
+					&:hover
+						fill: #273444
+						-webkit-transform: scale(1.2)
+						transform: scale(1.2)
+			.hiring
+				display: block
+				font: 16px "DattoDin", "Helvetica Neue", sans-serif
+		
+	.main-content
+		padding-top: 60px
+		box-sizing: border-box
+		@media screen and (min-width: 768px)
+			&.subnav
+				padding-left: 37.5%
+			&.no-subnav
+				padding-left: 15% !important
+		@media screen and (min-width: 1400px)
+			&.subnav
+				padding-left: 25%
+			&.no-subnav
+				padding-left: 12.5% !important
+		
+		.content
+			width: 85%	
+			max-width: 1200px	
+			margin: 0 auto
+			box-sizing: border-box
+			padding: 40px 80px 60px 80px
+
+		.panel
+			border: 1px solid #E5E9EB
+			margin-bottom: 0
+			&.no-margin
+				padding: 0 15px
+			section
+				padding: 25px 30px 30px 30px
+			.fontPanel
+				width: 100%
+				display: inline-block
+				position: relative
+				overflow: hidden
+				box-sizing: border-box
+				.inner
+					box-sizing: border-box
+					padding: 24px 20px
+					white-space: nowrap
+					overflow: hidden
+					overflow-x: hidden
+					.label
+						color: #4E6973
+						padding: 0 0 0 3px
+						font-weight: 300
+						font-size: 14px !important
+				
+
+			.letter-list
+				margin: 8px 0
+				&.lower
+					text-transform: lowercase
+				&.upper 
+					text-transform: uppercase
+				&.bold 
+					.letter
+						font-weight: bold
+				&.bold-condensed
+					.letter
+						font-family: 'DattoDIN-BoldCondensed'
+				&.italic
+					font-style: italic
+				.letter 
+					display: inline-block
+					font-size: 20px
+					margin-right: 8px
+
+			.color-card
+				width: 100%
+				height: 80px
+				span 
+					display: block
+
+		.codePanel
+			width: 100%
+			background-color: #f9fafc
+			border-right: 1px solid #E5E9EB
+			border-bottom: 1px solid #E5E9EB
+			border-left: 1px solid #E5E9EB
+			padding: 25px 30px
+			pre 
+				padding: 0
+				margin: 0
+				background-color: transparent
+				border: 0
+				display: block
+				color: #4E6973
+
+.h130
+	height: 130px
+
+.code-tag
+	background-color: #F5F6F7
+	border: 1px solid #E5E9EB
+	padding: 0 5px
+	color: #199ED9
+	display: inline-block
+	border-radius: 4px 
+	font-weight: 300
+	font-size: 16px
+	line-height: 24px
+	margin-top: -1px
+	font-family: Menlo,Monaco,Courier,monospace
+
