@@ -1,0 +1,18 @@
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "guide/design"
+    values:
+      secondary_nav_include: guide/nav.html
+      secondary_subnav_include: guide/design-subnav.html
+  -
+    scope:
+      path: "guide/components"
+    values:
+      secondary_nav_include: guide/nav.html
+      secondary_subnav_include: guide/components-subnav.html

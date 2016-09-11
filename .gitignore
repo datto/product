@@ -3,6 +3,11 @@
 *.log
 .sass-cache
 
+#jekyll
+_site/
+.sass-cache/
+.jekyll-metadata
+
 # Package managers
 /vendor/
 /bower_components/
