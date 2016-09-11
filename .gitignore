@@ -1,6 +1,7 @@
 *.bak
 *.swp
 *.log
+.sass-cache
 
 # Package managers
 /vendor/
