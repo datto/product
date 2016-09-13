@@ -1394,8 +1394,7 @@ ul {
     .style-app .main-content .panel {
       border: 1px solid #E5E9EB;
       margin-bottom: 0;
-      border-radius: 4px 4px 0 0;
-      border-bottom: 0; }
+      border-radius: 4px 4px 0 0; }
       .style-app .main-content .panel.no-margin {
         padding: 0 15px; }
       .style-app .main-content .panel section {
