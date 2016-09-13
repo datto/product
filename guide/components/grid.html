@@ -8,112 +8,27 @@ permalink: /guide/components/grid/
 <h2 class="mtb-m">Basic Grid</h2>
 <div class="panel">
   <section>
-    <h3 class="mb-m">Even columns</h3>
-    <div class="row mb-m">
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-      <div class="col-md-1"><div class="column">1</div></div>
-    </div>
-    <div class="row mb-m">
-      <div class="col-md-2"><div class="column">2</div></div>
-      <div class="col-md-2"><div class="column">2</div></div>
-      <div class="col-md-2"><div class="column">2</div></div>
-      <div class="col-md-2"><div class="column">2</div></div>
-      <div class="col-md-2"><div class="column">2</div></div>
-      <div class="col-md-2"><div class="column">2</div></div>
-    </div>
-    <div class="row mb-m">
-      <div class="col-md-3"><div class="column">3</div></div>
-      <div class="col-md-3"><div class="column">3</div></div>
-      <div class="col-md-3"><div class="column">3</div></div>
-      <div class="col-md-3"><div class="column">3</div></div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"><div class="column">6</div></div>
-      <div class="col-md-6"><div class="column">6</div></div>
-    </div>
+{% include partials/grid_even-columns.html %}
   </section>
 </div>
 <div class="codePanel mb-xl">
-        <pre>
-            <code>
-    &lt;div class="row mb-m"&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-1"&gt;&lt;div class="column"&gt;1&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row mb-m"&gt;
-        &lt;div class="col-md-2"&gt;&lt;div class="column"&gt;2&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-2"&gt;&lt;div class="column"&gt;2&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-2"&gt;&lt;div class="column"&lt;2&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-2"&gt;&lt;div class="column"&lt;2&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-2"&gt;&lt;div class="column"&lt;2&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-2"&gt;&lt;div class="column"&lt;2&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row mb-m"&gt;
-        &lt;div class="col-md-3"&gt;&lt;div class="column"&gt;3&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-3"&gt;&lt;div class="column"&gt;3&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-3"&gt;&lt;div class="column"&gt;3&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-3"&gt;&lt;div class="column"&gt;3&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-md-6"&gt;&lt;div class="column"&gt;6&lt;/div&gt;&lt;/div&gt;
-        &lt;div class="col-md-6"&gt;&lt;div class="column"&gt;6&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;</code>
+<span class="DattoDin gray fontSize-m bold">CODE SAMPLE</span>
+  <pre>
+  <xmp class="prettyprint lang-html">
+{% include partials/grid_even-columns.html %}
+  </xmp>  
   </pre>
 </div>
 <div class="panel">
   <section>
-    <h3 class="mb-m">Uneven columns</h3>
-    <div class="row mb-m">
-      <div class="col-md-2"><div class="column">2</div></div>
-      <div class="col-md-10"><div class="column">10</div></div>
-    </div>
-    <div class="row mb-l">
-      <div class="col-md-10"><div class="column">10</div></div>
-      <div class="col-md-2"><div class="column">2</div></div>
-    </div>
-    <div class="row mb-m">
-      <div class="col-md-3"><div class="column">3</div></div>
-      <div class="col-md-9"><div class="column">9</div></div>
-    </div>
-    <div class="row mb-l">
-      <div class="col-md-9"><div class="column">9</div></div>
-      <div class="col-md-3"><div class="column">3</div></div>
-    </div>
-    <div class="row mb-m">
-      <div class="col-md-4"><div class="column">4</div></div>
-      <div class="col-md-8"><div class="column">8</div></div>
-    </div>
-    <div class="row mb-l">
-      <div class="col-md-8"><div class="column">8</div></div>
-      <div class="col-md-4"><div class="column">4</div></div>
-    </div>
-    <div class="row mb-m">
-      <div class="col-md-5"><div class="column">5</div></div>
-      <div class="col-md-7"><div class="column">7</div></div>
-    </div>
-    <div class="row mb-l">
-      <div class="col-md-7"><div class="column">7</div></div>
-      <div class="col-md-5"><div class="column">5</div></div>
-    </div>
+{% include partials/grid_uneven-columns.html %}
   </section>
+</div>
+<div class="codePanel mb-xl">
+<span class="DattoDin gray fontSize-m bold">CODE SAMPLE</span>
+  <pre>
+  <xmp class="prettyprint lang-html">
+{% include partials/grid_uneven-columns.html %}
+  </xmp>  
+  </pre>
 </div>
