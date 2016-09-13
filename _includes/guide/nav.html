@@ -1,0 +1,10 @@
+{% assign nav2 = {{page.path | split:"/"}} %}
+
+<div class="menu">
+  <dl class="menu-item {% if nav2[1] == 'index.html' %}active{% endif %} no-subnav"><a href="/guide" class="link {% if nav2[1] == 'index.html' %}active{% endif %} no-subnav">Overview</a></dl>
+  <dl class="menu-item {% if nav2[1] == 'design' %}active{% endif %}"><a href="/guide/design" class="link {% if nav2[1] == 'design' %}active{% endif %}">Design</a></dl>
+  <dl class="menu-item {% if nav2[1] == 'components' %}active{% endif %}"><a href="/guide/components" class="link {% if nav2[1] == 'components' %}active{% endif %}">Components</a></dl>
+  <dl class="menu-item"><a class="link disabled">Utility</a></dl>
+  <dl class="menu-item"><a class="link disabled">Examples</a></dl>
+  <dl class="menu-item"><a class="link disabled">Code</a></dl>
+</div>
