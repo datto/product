@@ -1393,7 +1393,9 @@ ul {
       padding: 40px 80px 60px 80px; }
     .style-app .main-content .panel {
       border: 1px solid #E5E9EB;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      border-radius: 4px 4px 0 0;
+      border-bottom: 0; }
       .style-app .main-content .panel.no-margin {
         padding: 0 15px; }
       .style-app .main-content .panel section {
@@ -1448,8 +1450,22 @@ ul {
       border-radius: 0 0 4px 4px; }
       .style-app .main-content .codePanel xmp {
         font-family: "Menlo" !important;
-        margin: -20px 0 -35px 0;
+        margin: 0px 0 -35px -40px;
         padding: 0; }
+        .style-app .main-content .codePanel xmp ol {
+          counter-reset: item;
+          list-style-type: none;
+          color: #777; }
+          .style-app .main-content .codePanel xmp ol li {
+            counter-increment: item; }
+            .style-app .main-content .codePanel xmp ol li:before {
+              content: counter(item) " ";
+              padding-right: 15px;
+              user-select: none;
+              -moz-user-select: none;
+              -khtml-user-select: none;
+              -webkit-user-select: none;
+              -o-user-select: none; }
       .style-app .main-content .codePanel pre {
         padding: 0;
         margin: 0;

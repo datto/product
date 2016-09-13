@@ -235,6 +235,8 @@
 		.panel
 			border: 1px solid #E5E9EB
 			margin-bottom: 0
+			border-radius: 4px 4px 0 0
+			border-bottom: 0
 			&.no-margin
 				padding: 0 15px
 			section
@@ -295,8 +297,23 @@
 			border-radius: 0 0 4px 4px
 			xmp 
 				font-family: 'Menlo' !important
-				margin: -20px 0 -35px 0
+				margin: 0px 0 -35px -40px
 				padding: 0
+				ol 
+					counter-reset: item
+					list-style-type: none
+					color: #777
+					li
+						counter-increment: item
+						&:before
+							content: counter(item) ' '
+							padding-right: 15px
+							user-select: none
+							-moz-user-select: none
+							-khtml-user-select: none
+							-webkit-user-select: none
+							-o-user-select: none
+
 			pre 
 				padding: 0
 				margin: 0
