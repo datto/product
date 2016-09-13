@@ -1,3 +1,9 @@
+---
+# Jekyll front-matter block required so that Jekyll processes our SASS
+---
+
+@import 'variables'
+
 body
 	margin: 0
 	padding: 0
@@ -6,15 +12,13 @@ body
 	background-color: #fff !important
 	-webkit-font-smoothing: antialiased
 
-@import 'includes/typography.sass'
-@import 'includes/button.sass'
-@import 'includes/color.sass'
-@import 'includes/form.sass'
-@import 'includes/utilities.sass'
-@import 'includes/grid.scss'
-
-
+@import 'includes/typography'
+@import 'includes/button'
+@import 'includes/color'
+@import 'includes/form'
+@import 'includes/utilities'
+@import 'includes/grid'
 
 //Always import the design guide SASS last
-@import 'includes/design-guide.sass'
-@import 'includes/code-prettify.sass'
+@import 'includes/design-guide'
+@import 'includes/code-prettify'
