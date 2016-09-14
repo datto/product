@@ -76,9 +76,15 @@
 		text-align: right
 		height: 75px
 		margin-right: 20px
-		a.active
-			color: #1fb6ff
-			text-decoration: none
+		a 
+			color: #444
+			&.disabled-text
+				color: #ccc
+				cursor: not-allowed
+			&.active
+				color: #1fb6ff
+				text-decoration: none
+
 
 	.left-nav
 		overflow: hidden
