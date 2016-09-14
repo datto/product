@@ -1,3 +1,10 @@
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir: _sass
+  style: :compressed
+
 defaults:
   -
     scope:
@@ -16,3 +23,4 @@ defaults:
     values:
       secondary_nav_include: guide/nav.html
       secondary_subnav_include: guide/components-subnav.html
+
