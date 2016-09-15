@@ -1,3 +1,5 @@
+@import 'variables'
+
 @font-face
 	font-family: 'DattoDIN'
 	font-style: normal
@@ -23,7 +25,7 @@
 	src: url('font/DattoDIN-BoldCondensed.eot'), url('font/DattoDIN-BoldCondensed.eot?#iefix') format('embedded-opentype'), url('font/DattoDIN-BoldCondensed.woff2') format('woff2'), url('font/DattoDIN-BoldCondensed.woff') format('woff'), url('font/DattoDIN-BoldCondensed.ttf') format('truetype'),  url('font/DattoDIN-BoldCondensed.svg#dattodinboldcondensed') format('svg')
 
 .DattoDin
-	font-family: $DattoDin
+	font-family: $DattoDIN
 .Helvetica
 	font-family: $Helvetica
 	font-weight: normal
@@ -34,25 +36,28 @@ h1, h2, h3, h4, h5, p
 	padding: 0
 
 h1, h2, h3, h4, h5
-	font-family: $DattoDin
 	text-transform: capitalize
 
 h1
+	font-family: $DattoDIN-BoldCondensed
 	font-size: 38px
-	font-weight: normal
+	font-weight: bold
 	line-height: 46px
 	color: $midnight-80
 h2
+	font-family: $DattoDIN-BoldCondensed
 	font-size: 30px
-	font-weight: normal
+	font-weight: bold
 	line-height: 36px
 	color: $midnight-50
 h3
+	font-family: $DattoDIN
 	font-size: 24px
 	font-weight: bold
 	line-height: 30px
 	color: $midnight-70
 h4
+	font-family: $DattoDIN
 	font-size: 18px
 	font-weight: bold
 	line-height: 26px
