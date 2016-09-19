@@ -4,4 +4,19 @@ permalink: /guide/components/wizards/
 ---
 
 <h1 class="mb-xl mt-s">Wizards</h1>
-<p>Input fields come in four sizes which can be applied with <span class="code-tag">.input-xl</span>, <span class="code-tag">.input-l</span>, <span class="code-tag">.input-m</span> and <span class="code-tag">.input-s</span> on the .input component itself.</p>
+<h2 class="mb-s">Default Wizard</h2>
+<p class="mb-m">There are two modal sizes which can be triggered with classes <span class="code-tag">.modal--s</span> and <span class="code-tag">.modal--m</span>. All modals should be placed in a wrapper component that has classes <span class="code-tag">.modal-overlay</span> and <span class="code-tag">.zi-overlay</span>.</p>
+<div class="panel no-margin">
+	<h4 class="mt-m mb-s">Example Step 1</h4>
+	<img src="/guide/images/Step-1.png" class="full-width">
+	<h4 class="mt-m mb-s">Example Step 2</h4>
+	<img src="/guide/images/Step-2.png" class="full-width">
+	<h4 class="mt-m mb-s">Example Step 3</h4>
+	<img src="/guide/images/Step-3.png" class="full-width">
+	<h4 class="mt-m mb-s">Example Step 3 - Processing</h4>
+	<img src="/guide/images/Step-4.png" class="full-width mb-m">
+</div>
+<div class="codePanel mb-xl">
+  <span class="d-block DattoDin gray fontSize-m bold mb-s">CODE SAMPLE</span>
+  {% highlight html linenos %}{% include guide/partials/form_input-size.html %}{% endhighlight %}
+</div>
