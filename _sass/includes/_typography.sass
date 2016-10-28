@@ -1,27 +1,8 @@
-@font-face
-	font-family: 'DattoDIN'
-	font-style: normal
-	font-weight: normal
-	src: url('font/DattoDIN-Regular.eot'), url('font/DattoDIN-Regular.eot?#iefix') format('embedded-opentype'), url('font/DattoDIN-Regular.woff2') format('woff2'), url('font/DattoDIN-Regular.woff') format('woff'), url('font/DattoDIN-Regular.ttf') format('truetype'), url('font/DattoDIN-Regular.svg#dattodinregular') format('svg')
+$primary-font: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif
+$secondary-font: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif
 
-@font-face
-	font-family: 'DattoDIN'
-	font-style: normal
-	font-weight: bold
-	src: url('font/DattoDIN-Bold.eot'), url('font/DattoDIN-Bold.eot?#iefix') format('embedded-opentype'), url('font/DattoDIN-Bold.woff2') format('woff2'), url('font/DattoDIN-Bold.woff') format('woff'), url('font/DattoDIN-Bold.ttf') format('truetype'), url('font/DattoDIN-Bold.svg#dattodinbold') format('svg')
-
-@font-face
-	font-family: 'DattoDIN'
-	font-style: italic
-	font-weight: normal
-	src: url('font/DattoDIN-Italic.eot'), url('font/DattoDIN-Italic.eot?#iefix') format('embedded-opentype'), url('font/DattoDIN-Italic.woff2') format('woff2'), url('font/DattoDIN-Italic.woff') format('woff'), url('font/DattoDIN-Italic.ttf') format('truetype'), url('font/DattoDIN-Italic.svg#dattodinitalic') format('svg')
-
-@font-face
-	font-family: 'DattoDIN-BoldCondensed'
-	font-style: normal
-	font-weight: bold
-	src: url('font/DattoDIN-BoldCondensed.eot'), url('font/DattoDIN-BoldCondensed.eot?#iefix') format('embedded-opentype'), url('font/DattoDIN-BoldCondensed.woff2') format('woff2'), url('font/DattoDIN-BoldCondensed.woff') format('woff'), url('font/DattoDIN-BoldCondensed.ttf') format('truetype'),  url('font/DattoDIN-BoldCondensed.svg#dattodinboldcondensed') format('svg')
-
+.Roboto
+	font-family: $Roboto
 .DattoDin
 	font-family: $DattoDIN
 .Helvetica
@@ -37,38 +18,38 @@ h1, h2, h3, h4, h5
 	text-transform: capitalize
 
 h1
-	font-family: $DattoDIN-BoldCondensed
+	font-family: $primary-font
 	font-size: 38px
 	font-weight: bold
 	line-height: 46px
 	color: $midnight-80
 h2
-	font-family: $DattoDIN-BoldCondensed
+	font-family: $primary-font
 	font-size: 30px
 	font-weight: bold
 	line-height: 36px
 	color: $midnight-50
 h3
-	font-family: $DattoDIN
+	font-family: $primary-font
 	font-size: 24px
 	font-weight: bold
 	line-height: 30px
 	color: $midnight-70
 h4
-	font-family: $DattoDIN
+	font-family: $primary-font
 	font-size: 18px
 	font-weight: bold
 	line-height: 26px
 	color: $midnight-100
 h5
-	font-family: $DattoDIN
+	font-family: $primary-font
 	font-size: 16px
 p
-	font-family: $Helvetica
+	font-family: $secondary-font
 	font-size: 15px
-	font-weight: 300
+	font-weight: 400
 	line-height: 30px
-	color: $midnight-100
+	color: $midnight-80
 	span
 		display: block
 		color: #3c4858

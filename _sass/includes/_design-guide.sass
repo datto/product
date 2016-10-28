@@ -17,12 +17,12 @@
 			position: relative
 			h1
 				margin: 0
-				font-family: "DattoDin", sans-serif
+				font-family: $primary-font
 				border-left: 1px solid #e0e6ed
 				padding-left: 20px
 				margin-left: 10px
 				font-size: 28px !important
-				font-weight: normal
+				font-weight: 400
 				color: #bbb
 
 		.logo-box
@@ -33,7 +33,7 @@
 				fill: #199ED9
 			.label
 				display: block
-				font-family: "DattoDin", sans-serif
+				font-family: $primary-font
 				font-weight: 500
 				font-size: 12px
 				letter-spacing: 3px
@@ -43,7 +43,7 @@
 					position: relative
 					&:after
 						content: '>'
-						font: 18px "DattoDin", "Helvetica Neue", sans-serif
+						font: 18px $primary-font
 						color: #ccc
 						font-weight: bold
 						-webkit-transform: rotate(90deg)
@@ -62,7 +62,7 @@
 					padding: 10px 20px 10px 10px
 					border-bottom: 4px solid #e0e6ed
 					background: #fff
-					font-family: "DattoDin", sans-serif
+					font-family: $primary-font
 					text-transform: capitalize
 					color: #8492a6
 					font-size: 16px
@@ -78,13 +78,14 @@
 		text-align: right
 		height: 75px
 		margin-right: 20px
+		font-family: $primary-font
 		a
 			color: #444
 			&.disabled-text
 				color: #ccc
 				cursor: not-allowed
 			&.active
-				color: #1fb6ff
+				color: #4E6973
 				text-decoration: none
 
 
@@ -125,14 +126,15 @@
 				a.link
 					text-decoration: none
 					box-sizing: border-box
-					color: #3c4858
-					font-family: "DattoDin", sans-serif
+					color: #1fb6ff
+					font-family: $primary-font
 					display: block
 					padding: 15px 25px
 					font-size: 20px
 					font-weight: normal
 					&.active
-						color: #1fb6ff
+						color: #4E6973
+						font-weight: 500
 					&.disabled
 						color: #ccc
 						cursor: not-allowed
@@ -147,7 +149,7 @@
 					a
 						display: block
 						font-size: 17px
-						font-family: "DattoDin", sans-serif
+						font-family: $primary-font
 						padding: 10px 0
 						color: #8492a6
 						text-decoration: none
@@ -176,11 +178,12 @@
 			a
 				display: block
 				font-size: 17px
-				font-family: "DattoDin", sans-serif
-				color: #4E6973
+				font-family: $primary-font
+				color: #1fb6ff
 				text-decoration: none
 				&.active
-					color: #1fb6ff
+					color: #4E6973
+					font-weight: 600
 	.nav-white
 		height: 100%
 		border-right: 1px solid #e0e6ed
@@ -217,7 +220,7 @@
 						transform: scale(1.2)
 			.hiring
 				display: block
-				font: 16px "DattoDin", "Helvetica Neue", sans-serif
+				font: 15px $primary-font
 
 	.main-content
 		padding-top: 60px
@@ -302,7 +305,7 @@
 						font-weight: bold
 				&.bold-condensed
 					.letter
-						font-family: 'DattoDIN-BoldCondensed'
+						font-family: $primary-font
 				&.italic
 					font-style: italic
 				.letter
