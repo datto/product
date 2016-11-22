@@ -1,0 +1,81 @@
+---
+title: Wizard Example 1 (Virtual Onboarding) - Datto Product Design Guide
+permalink: /guide/components/wizards/example1
+layout: example
+---
+
+<div class="wizard-branding">
+	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="f-left mb-m">
+</div>
+<div class="wizard pt-m pr-l pb-m pl-l">
+	<h1 class="pt-m pb-m">Device Registration</h1>
+	<div class="wizard-main">
+		<div class="steps">
+			<ul>
+				<li><a href="#" class="active">Connect to Internet</a> 
+					<span class="icon icon-arrow-right fontSize-l d-inlineBlock f-right">
+				</li>
+				<li><a href="#" class="disabled">Update Device</a></li>
+				<li><a href="#" class="disabled">Authorize Service</a></li>
+				<li><a href="#" class="disabled">Configure Storage</a></li>
+				<li><a href="#" class="disabled">Create Account</a></li>
+			</ul>
+		</div>
+		<div class="step-content pa-m pl-l">
+			<p>Choose the basic networking settings you would like to use to connect your device to the internet.</p>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12 mt-s">
+							<h3>Eth0</h3>
+						</div>
+						<div class="col-md-6">
+							<label class="m mt-m">IP Address:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Subnet:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Gateway:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+						</div>
+						<div class="col-md-6">
+							<label class="m mt-m">Primary DNS:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Secondary DNS:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Domain:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="row">
+						<div class="col-md-12 mt-s">
+							<h3>Eth1</h3>
+						</div>
+						<div class="col-md-6">
+							<label class="m mt-m">IP Address:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Subnet:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Gateway:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+						</div>
+						<div class="col-md-6">
+							<label class="m mt-m">Primary DNS:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Secondary DNS:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+							<label class="m mt-m">Domain:</label>
+							<input class="input-m" type="text" placeholder="Placeholder text">
+						</div>
+					</div>
+				</div>
+        	</div>
+		</div>
+	</div>
+	<div class="action-bar">
+		<button class="button primary button--m button-icon mt-m f-right">
+			Next <span class="icon icon-arrow-right fontSize-l d-inlineBlock"></span>
+		</button>
+	</div>
+</div>

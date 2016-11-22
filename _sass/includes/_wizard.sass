@@ -1,0 +1,64 @@
+@import 'variables'
+
+.wizard-branding
+	display: block
+	width: 1040px
+
+.wizard
+	display: block
+	width: 960px
+	background-color: rgba(245,246,247,1)
+	border-bottom: 3px solid #59697D
+
+	h1
+		.version
+			color: #D2E0E5
+
+	.wizard-main
+		height: 500px
+		.steps
+			box-sizing: border-box
+			width: 20%
+			float: left
+			height: 100%
+			ul
+				list-style-type: none
+				margin-top: 15px
+				padding-right: 10px
+				.icon
+					position: relative
+					top: 2px
+				li 
+					display: block
+					font-size: 18px
+					font-family: $DattoDIN
+					color: #1fb6ff
+					text-decoration: none
+					padding: 10px 0
+					.disabled
+						color: #81949B
+						cursor: not-allowed
+					.active
+						font-weight: bold
+						color: #355460
+						cursor: not-allowed
+		.step-content
+			box-sizing: border-box
+			width: 80%
+			float: left
+			height: 100%
+			background-color: #fff
+			border: 1px solid #D9DFE1
+			border-radius: 4px
+
+			.box
+				border: 1px solid red
+				padding: 10px
+				box-sizing: border-box
+
+	.action-bar
+		.icon
+			color: #fff
+			top: 4px
+			position: relative
+	

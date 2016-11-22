@@ -319,6 +319,32 @@
 				box-sizing: border-box
 				span
 					display: block
+	&.example_background
+		background-color: $blue
+		background: url("/guide/images/wizard-background.jpg") no-repeat center center fixed
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+	
+	.example
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		height: 100%
+		.example-header
+			position: fixed
+			top: 0
+			padding: 10px 20px 
+			width: 100%
+			color: #fff
+			background-color: rgba(245, 246, 247, .2)
+			border-bottom: 1px solid rgba(217, 223, 225, .45)
+			font-family: $DattoDIN
+			a
+				color: #00557A
+
 
 .h130
 	height: 130px
