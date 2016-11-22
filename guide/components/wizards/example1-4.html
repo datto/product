@@ -23,7 +23,37 @@ layout: example
 			<p>Please select from the available RAID configurations that will best meet your need.</p>
 			<div class="row">
 				<div class="col-md-12">
-					<p>RAID OPTIONS HERE</p>
+					<h4 class="mt-m mb-s">Your device is provisioned for 4TB of cloud storage</h4>
+					<form>
+					<ul>
+					<li>
+						<input type="radio" name="raid" class="ml-m d-inlineBlock f-left" value="raid0">
+						<span class="f-left ml-s radio-value">RAID 0</span>
+						<span class="f-right mr-s radio-description">xx drives required. Will provide xxTB of allowable storage.</span>
+					</li>
+					<li>
+						<input type="radio" name="raid" class="ml-m d-inlineBlock f-left" value="raid1">
+						<span class="f-left ml-s radio-value">RAID 1</span>
+						<span class="f-right mr-s radio-description">xx drives required. Will provide xxTB of allowable storage.</span>
+					</li>
+					<li>
+						<input type="radio" name="raid" class="ml-m d-inlineBlock f-left" value="raid5" checked>
+						<span class="f-left ml-s radio-value">RAID 5</span>
+						<span class="f-right mr-s radio-description">xx drives required. Will provide xxTB of allowable storage.</span>
+					</li>
+					<li>
+						<input type="radio" name="raid" class="ml-m d-inlineBlock f-left" value="raid6">
+						<span class="f-left ml-s radio-value">RAID 6</span>
+						<span class="radio-tag">Recommended</span>
+						<span class="f-right mr-s radio-description">xx drives required. Will provide xxTB of allowable storage.</span>
+					</li>
+					<li>
+						<input type="radio" name="raid" class="ml-m d-inlineBlock f-left" value="raid10">
+						<span class="f-left ml-s radio-value">RAID 10</span>
+						<span class="f-right mr-s radio-description">xx drives required. Will provide xxTB of allowable storage.</span>
+					</li>
+					</ul>
+					</form>
 				</div>
         	</div>
 		</div>
