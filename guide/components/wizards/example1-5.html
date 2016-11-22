@@ -1,6 +1,6 @@
 ---
 title: Wizard Example 1 (Virtual Onboarding) - Datto Product Design Guide
-permalink: /guide/components/wizards/example1
+permalink: /guide/components/wizards/example1-5
 layout: example
 ---
 
@@ -12,13 +12,11 @@ layout: example
 	<div class="wizard-main">
 		<div class="steps">
 			<ul>
-				<li><a href="#" class="active">Connect to Internet</a> 
-					<span class="icon icon-arrow-right fontSize-l d-inlineBlock f-right">
-				</li>
-				<li><a href="#" class="disabled">Update Device</a></li>
-				<li><a href="#" class="disabled">Authorize Service</a></li>
-				<li><a href="#" class="disabled">Configure Storage</a></li>
-				<li><a href="#" class="disabled">Create Account</a></li>
+				<li><a href="example1">Connect to Internet</a></li>
+				<li><a href="example1-2">Update Device</a></li>
+				<li><a href="example1-3">Authorize Service</a></li>
+				<li><a href="example1-4">Configure Storage</a></li>
+				<li><a href="#" class="active">Create Account</a><span class="icon icon-arrow-right fontSize-l d-inlineBlock f-right"></li>
 			</ul>
 		</div>
 		<div class="step-content pa-m pl-l">
@@ -74,8 +72,8 @@ layout: example
 		</div>
 	</div>
 	<div class="action-bar">
-		<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example1-2'">
-			Next <span class="icon icon-arrow-right fontSize-l d-inlineBlock"></span>
+		<button class="button save button--m button-icon mt-m f-right">
+			Complete Registration <span class="icon icon-arrow-right fontSize-l d-inlineBlock"></span>
 		</button>
 	</div>
 </div>
