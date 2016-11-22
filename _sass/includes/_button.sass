@@ -2,7 +2,7 @@
 	text-transform: uppercase
 	font-weight: bold
 	letter-spacing: .5px
-	font-family: 'DattoDin', "Helvetica Neue", Helvetica, Arial, sans-serif
+	font-family: $DattoDIN
 	box-sizing: border-box
 	border-radius: 3px
 	cursor: pointer
@@ -26,6 +26,12 @@
 			background-color: #43BE32
 		&:active
 			box-shadow: inset 0 2px 5px rgba(31,45,61,.3)
+	&.tertiary
+		border: 0
+		background-color: transparent
+		color: #1B81ED
+		font-weight: normal
+
 	&.secondary
 		border-top: 1px solid #E5E9EB
 		border-left: 1px solid #E5E9EB
@@ -64,6 +70,8 @@
 		line-height: 40px
 		&.button-icon
 			padding: 0 10px 0 18px
+		&.tertiary
+			line-height: 42px
 	&.button--s
 		font-size: 14px
 		min-width: 30px
