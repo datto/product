@@ -27,10 +27,13 @@ layout: example
 					<div class="network-connection mt-m">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="d-inlineBlock ethernet-port mb-s mr-s">Eth0</h3>
-								<div class="d-inlineBlock">
+								<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s">
+								Your browser does not support SVG
+								</object>
+								<span class="eth-port connected">0</span>
+								<div class="d-inlineBlock network-status">
 									<h5>Status:</h5>
-									<p class="internet-connected">Connected to Internet</p>
+									<p class="status-tag connected">Connected to Internet</p>
 								</div>
 								<h5 class="mt-s mb-xs">Address Type:</h5>
 								<input type="radio" name="address1" value="dhcp" checked> <span>DHCP</span>
@@ -59,40 +62,63 @@ layout: example
 					<div class="network-connection mt-m">
 						<div class="row">
 							<div class="col-md-12">
-								<h3 class="d-inlineBlock ethernet-port mb-s mr-s">Eth1</h3>
-								<div class="d-inlineBlock">
-									<h5>Status:</h5>
-									<p class="disconnected">Cable Disconnected</p>
-								</div>
-								<h5 class="mt-s mb-xs">Address Type:</h5>
-								<input type="radio" name="address2" value="dhcp"> <span>DHCP</span>
-								<input type="radio" name="address2" value="manual" checked> <span>Manual</span>
-							</div>
-							<div class="col-md-6">
-								<label class="m mt-m">IP Address:</label>
-								<input class="input-m" type="text" placeholder="Placeholder">
-								<label class="m mt-m">Subnet:</label>
-								<input class="input-m" type="text" placeholder="Placeholder">
-								<label class="m mt-m">Gateway:</label>
-								<input class="input-m" type="text" placeholder="Placeholder">
-							</div>
-							<div class="col-md-6">
-								<label class="m mt-m">Primary DNS:</label>
-								<input class="input-m" type="text" placeholder="Placeholder">
-								<label class="m mt-m">Secondary DNS:</label>
-								<input class="input-m" type="text" placeholder="Placeholder">
-								<label class="m mt-m">Domain:</label>
-								<input class="input-m" type="text" placeholder="Placeholder">
-							</div>
+								<?xml version="1.0" encoding="UTF-8"?>
+								<svg width="64px" height="51px" viewBox="0 0 64 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="d-inlineBlock mt-s mb-s ethernet-svg disconnected">
+									<!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+									<title>ethernet</title>
+									<desc>Created with Sketch.</desc>
+									<defs>
+									<rect id="path-1" x="0.857142857" y="0" width="63.1428571" height="51" rx="4"></rect>
+									<mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="63.1428571" height="51" fill="white">
+									<use xlink:href="#path-1"></use>
+									</mask>
+									</defs>
+									<g id="Registration-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<g id="ethernet" transform="translate(-5.000000, -5.000000)">
+											<g transform="translate(5.000000, 5.000000)">
+											<path d="M26.0279001,46.8350239 C24.7821951,46.8350239 23.5595283,45.6183763 23.5595283,44.378804 L23.5595283,42.7413241 L21.0911564,42.7413241 C19.8454514,42.7413241 18.6227845,41.5246765 18.6227845,40.2851042 L18.6227845,36.6007744 L9.57208774,36.6007744 C8.32638274,36.6007744 7.10371588,35.3841268 7.10371588,34.1445546 L7.10371588,8.35424589 C7.10371588,7.18713208 8.16511578,6.30739599 9.57208774,6.30739599 L56.8825483,6.30739599 C58.1319559,6.30739599 58.9395249,7.11057989 58.9395249,8.35424589 L58.9395249,34.1445546 C58.9395249,35.5450093 58.0554364,36.6007744 56.8825483,36.6007744 L47.4204562,36.6007744 C47.2373853,36.6007744 47.0855804,36.6511269 47.0090609,36.6928827 L47.0090609,40.2851042 C47.0090609,41.6855589 46.1249724,42.7413241 44.9520844,42.7413241 L42.4837125,42.7413241 C42.3006416,42.7413241 42.1488367,42.7916766 42.0723172,42.8334324 L42.0723172,44.378804 C42.0723172,45.7788494 41.1878173,46.8350239 40.0153406,46.8350239 L26.0279001,46.8350239 Z M23.5595283,40.6944742 C24.8093472,40.6944742 25.6165048,41.4980675 25.6165048,42.7413241 L25.6165048,44.378804 C25.6350176,44.5114399 25.8941966,44.7697524 26.0365394,44.7885834 L39.9235995,44.788174 C39.9651504,44.7120312 40.015752,44.561383 40.015752,44.378804 L40.015752,42.7413241 C40.015752,41.5742103 41.0767405,40.6944742 42.4841239,40.6944742 L44.8603432,40.6944742 C44.9018941,40.6183314 44.9524958,40.4676832 44.9524958,40.2851042 L44.9524958,36.6007744 C44.9524958,35.4336606 46.0134843,34.5539245 47.4208676,34.5539245 L56.7908072,34.5539245 C56.8323581,34.4777817 56.8829597,34.3271336 56.8829597,34.1445546 L56.8829597,8.35424589 L9.57249913,8.35424589 C9.38901682,8.35424589 9.23762335,8.40459839 9.16110382,8.44594476 L9.16110382,34.1445546 C9.17961661,34.2771904 9.43879566,34.5355029 9.58113843,34.5543339 L18.6231959,34.5539245 C19.8730149,34.5539245 20.6801725,35.3575178 20.6801725,36.6007744 L20.6801725,40.2851042 C20.6986853,40.4177401 20.9578643,40.6760526 21.1002071,40.6948836 L23.5595283,40.6944742 L23.5595283,40.6944742 Z" id="port" class="port" fill="#199ED9" transform="translate(33.021620, 26.571210) rotate(-180.000000) translate(-33.021620, -26.571210) "></path>
+										<path d="M37.1355735,12.8573157 L28.9076673,12.8573157 C28.5666206,12.8573157 28.2905743,12.582219 28.2905743,12.2432607 C28.2905743,11.9043023 28.5666206,11.6292057 28.9076673,11.6292057 L37.1355735,11.6292057 C37.4762088,11.6292057 37.7526664,11.9043023 37.7526664,12.2432607 C37.7526664,12.582219 37.4762088,12.8573157 37.1355735,12.8573157 L37.1355735,12.8573157 Z" id="tab" class="tab" fill="#23A1D6" transform="translate(33.021620, 12.243261) rotate(-180.000000) translate(-33.021620, -12.243261) "></path>
+										<use id="container" stroke="#CDD4D7" mask="url(#mask-2)" stroke-width="2" transform="translate(32.428571, 25.500000) rotate(-180.000000) translate(-32.428571, -25.500000) " xlink:href="#path-1"></use>
+										<rect id="status_led" class="status_led" fill="#58C990" transform="translate(53.477737, 7.000000) rotate(-180.000000) translate(-53.477737, -7.000000) " x="48.9554731" y="4" width="9.0445269" height="6" rx="1.5"></rect>
+									</g>
+								</g>
+							</g>
+						</svg>
+						
+						<span class="eth-port disconnected">1</span>
+						<div class="d-inlineBlock network-status">
+							<h5>Status:</h5>
+							<p class="status-tag disconnected">Cable Unplugged</p>
 						</div>
+						<h5 class="mt-s mb-xs">Address Type:</h5>
+						<input type="radio" name="address2" value="dhcp"> <span>DHCP</span>
+						<input type="radio" name="address2" value="manual" checked> <span>Manual</span>
+					</div>
+					<div class="col-md-6">
+						<label class="m mt-m">IP Address:</label>
+						<input class="input-m" type="text" placeholder="Placeholder">
+						<label class="m mt-m">Subnet:</label>
+						<input class="input-m" type="text" placeholder="Placeholder">
+						<label class="m mt-m">Gateway:</label>
+						<input class="input-m" type="text" placeholder="Placeholder">
+					</div>
+					<div class="col-md-6">
+						<label class="m mt-m">Primary DNS:</label>
+						<input class="input-m" type="text" placeholder="Placeholder">
+						<label class="m mt-m">Secondary DNS:</label>
+						<input class="input-m" type="text" placeholder="Placeholder">
+						<label class="m mt-m">Domain:</label>
+						<input class="input-m" type="text" placeholder="Placeholder">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="action-bar">
-		<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example1-2'">
-		Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
-		</button>
-	</div>
+</div>
+</div>
+<div class="action-bar">
+<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example1-2'">
+Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
+</button>
+</div>
 </div>

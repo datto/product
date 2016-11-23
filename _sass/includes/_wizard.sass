@@ -60,14 +60,55 @@
 				padding: 10px
 				box-sizing: border-box
 
-				.ethernet-port
-					border: 1px solid #D9DFE1
-					padding: 20px
+				.network-status
+					vertical-align: top
+					margin-top: 15px
+					margin-left: 15px
+				.eth-port
+					position: absolute
+					top: 28px
+					left: 44px
+					font-size: 20px
+					font-family: $DattoDIN
+					font-weight: bold
+					&.connected
+						color: #23A1D6
+					&.disconnected
+						color: $midnight-40
+				.status-tag
+					padding: 5px
+					font-size: 14px
+					line-height: 14px
+					font-weight: bold
+					text-transform: uppercase
+					border-radius: 4px
+					&.connected
+						background-color: #3CB846
+						color: #fff
+					&.disconnected
+						color: $midnight-50
+						padding-left: 0
 
-				.internet-connected
-					color: #3CB846
-				.disconnected
-					color: $midnight-40
+				.ethernet-svg
+					&.connected
+						.status_led
+							fill: green
+						.network_tab
+							fill: green
+					&.disconnected
+						.status_led
+							fill: $midnight-30
+						.tab
+							fill: $midnight-30
+						.port 
+							fill: $midnight-30
+					&.error
+						.status_led
+							fill: red
+						.tab
+							fill: red
+						.port 
+							fill: red
 
 			ul 
 				list-style-type: none
