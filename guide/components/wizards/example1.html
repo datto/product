@@ -3,7 +3,6 @@ title: Wizard Example 1 (Virtual Onboarding) - Datto Product Design Guide
 permalink: /guide/components/wizards/example1
 layout: example
 ---
-
 <div class="wizard-branding">
 	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="f-left mb-m">
 </div>
@@ -12,8 +11,8 @@ layout: example
 	<div class="wizard-main">
 		<div class="steps">
 			<ul>
-				<li><a href="#" class="active">Connect to Internet</a> 
-					<span class="icon icon-right-arrow fontSize-xl f-right">
+				<li><a href="#" class="active">Connect to Internet</a>
+				<span class="icon icon-right-arrow fontSize-xl f-right">
 				</li>
 				<li><a href="#" class="disabled">Update Device</a></li>
 				<li><a href="#" class="disabled">Authorize Service</a></li>
@@ -25,57 +24,75 @@ layout: example
 			<p>Choose the basic networking settings you would like to use to connect your device to the internet.</p>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-12 mt-s">
-							<h3>Eth0</h3>
-						</div>
-						<div class="col-md-6">
-							<label class="m mt-m">IP Address:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Subnet:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Gateway:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-						</div>
-						<div class="col-md-6">
-							<label class="m mt-m">Primary DNS:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Secondary DNS:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Domain:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
+					<div class="network-connection mt-m">
+						<div class="row">
+							<div class="col-md-12">
+								<h3 class="d-inlineBlock ethernet-port mb-s mr-s">Eth0</h3>
+								<div class="d-inlineBlock">
+									<h5>Status:</h5>
+									<p class="internet-connected">Connected to Internet</p>
+								</div>
+								<h5 class="mt-s mb-xs">Address Type:</h5>
+								<input type="radio" name="address1" value="dhcp" checked> <span>DHCP</span>
+								<input type="radio" name="address1" value="manual"> <span>Manual</span>
+							</div>
+							<div class="col-md-6">
+								<label class="m mt-m">IP Address:</label>
+								<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" disabled>
+								<label class="m mt-m">Subnet:</label>
+								<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" disabled>
+								<label class="m mt-m">Gateway:</label>
+								<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1" disabled>
+							</div>
+							<div class="col-md-6">
+								<label class="m mt-m">Primary DNS:</label>
+								<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" disabled>
+								<label class="m mt-m">Secondary DNS:</label>
+								<input class="input-m" type="text" placeholder="8.8.4.4" value="8.8.4.4" disabled>
+								<label class="m mt-m">Domain:</label>
+								<input class="input-m" type="text" placeholder="google.com" value="google.com" disabled>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-12 mt-s">
-							<h3>Eth1</h3>
-						</div>
-						<div class="col-md-6">
-							<label class="m mt-m">IP Address:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Subnet:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Gateway:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-						</div>
-						<div class="col-md-6">
-							<label class="m mt-m">Primary DNS:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Secondary DNS:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
-							<label class="m mt-m">Domain:</label>
-							<input class="input-m" type="text" placeholder="Placeholder text">
+					<div class="network-connection mt-m">
+						<div class="row">
+							<div class="col-md-12">
+								<h3 class="d-inlineBlock ethernet-port mb-s mr-s">Eth1</h3>
+								<div class="d-inlineBlock">
+									<h5>Status:</h5>
+									<p class="disconnected">Cable Disconnected</p>
+								</div>
+								<h5 class="mt-s mb-xs">Address Type:</h5>
+								<input type="radio" name="address2" value="dhcp"> <span>DHCP</span>
+								<input type="radio" name="address2" value="manual" checked> <span>Manual</span>
+							</div>
+							<div class="col-md-6">
+								<label class="m mt-m">IP Address:</label>
+								<input class="input-m" type="text" placeholder="Placeholder">
+								<label class="m mt-m">Subnet:</label>
+								<input class="input-m" type="text" placeholder="Placeholder">
+								<label class="m mt-m">Gateway:</label>
+								<input class="input-m" type="text" placeholder="Placeholder">
+							</div>
+							<div class="col-md-6">
+								<label class="m mt-m">Primary DNS:</label>
+								<input class="input-m" type="text" placeholder="Placeholder">
+								<label class="m mt-m">Secondary DNS:</label>
+								<input class="input-m" type="text" placeholder="Placeholder">
+								<label class="m mt-m">Domain:</label>
+								<input class="input-m" type="text" placeholder="Placeholder">
+							</div>
 						</div>
 					</div>
 				</div>
-        	</div>
+			</div>
 		</div>
 	</div>
 	<div class="action-bar">
 		<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example1-2'">
-			Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
+		Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
 		</button>
 	</div>
 </div>
