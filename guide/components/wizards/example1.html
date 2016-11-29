@@ -28,11 +28,11 @@ layout: example
 						<div class="network-connection">
 							<div class="row">
 								<div class="col-md-4 no-right-padding">
-									<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s mr-xs port">
+									<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s mr-xs ml-s port">
 									Your browser does not support SVG
 									</object>
 									<span class="eth-port connected">0</span>
-									<div class="network-status">
+									<div class="network-status ml-s">
 										<span class="label">Status:</span>
 										<p class="status-tag connected">Connected to Internet</p>
 										<span class="label mt-s mb-xs">Address Type:</span>
@@ -68,12 +68,12 @@ layout: example
 					<div class="col-md-12">
 						<div class="network-connection">
 							<div class="row">
-								<div class="col-md-4 no-right-padding">
-									<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s mr-xs port">
+								<div class="col-md-4">
+									<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s mr-xs ml-s port">
 									Your browser does not support SVG
 									</object>
 									<span class="eth-port connected">1</span>
-									<div class="network-status">
+									<div class="network-status ml-s">
 										<span class="label">Status:</span>
 										<p class="status-tag connected">Connected to Internet</p>
 										<span class="label mt-s mb-xs">Address Type:</span>
@@ -109,37 +109,78 @@ layout: example
 					<div class="col-md-12">
 						<div class="network-connection">
 							<div class="row">
-								<div class="col-md-4 no-right-padding">
-									<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s mr-xs port">
+								<div class="col-md-4">
+									<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s mr-xs ml-s port">
 									Your browser does not support SVG
 									</object>
 									<span class="eth-port connected">2</span>
-									<div class="network-status">
+									<div class="network-status ml-s">
 										<span class="label">Status:</span>
 										<p class="status-tag connected">Connected to Internet</p>
 										<span class="label mt-s mb-xs">Address Type:</span>
-										<input type="radio" name="address2" value="dhcp" > <span class="mr-s">DHCP</span>
-										<input type="radio" name="address2" value="manual" selected> <span>Manual</span>
+										<input type="radio" name="address1" value="dhcp" > <span class="mr-s">DHCP</span>
+										<input type="radio" name="address1" value="manual" checked> <span>Manual</span>
 									</div>
 								</div>
 								<div class="col-md-8">
 									<div class="col-md-4 compact-l">
 										<label class="m mt-s mb-xs">IP Address:</label>
-										<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" disabled>
+										<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" >
 										<label class="m mt-m mb-xs">Primary DNS:</label>
-										<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" disabled>
+										<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" >
 									</div>
 									<div class="col-md-4 compact-l">
 										<label class="m mt-s mb-xs">Subnet:</label>
-										<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" disabled>
+										<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" >
 										<label class="m mt-m mb-xs">Secondary DNS:</label>
-										<input class="input-m mb-s" type="text" placeholder="8.8.4.4" value="8.8.4.4" disabled>
+										<input class="input-m mb-s" type="text" placeholder="8.8.4.4" value="8.8.4.4" >
 									</div>
 									<div class="col-md-4 compact-l">
 										<label class="m mt-s mb-xs">Gateway:</label>
-										<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1" disabled>
+										<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1">
 										<label class="m mt-m mb-xs">Domain:</label>
-										<input class="input-m" type="text" placeholder="google.com" value="google.com" disabled>
+										<input class="input-m" type="text" placeholder="google.com" value="google.com">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="network-connection">
+							<div class="row">
+								<div class="col-md-4">
+									<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="d-inlineBlock mt-s mb-s mr-xs ml-s port">
+									Your browser does not support SVG
+									</object>
+									<span class="eth-port connected">3</span>
+									<div class="network-status ml-s">
+										<span class="label">Status:</span>
+										<p class="status-tag connected">Connected to Internet</p>
+										<span class="label mt-s mb-xs">Address Type:</span>
+										<input type="radio" name="address1" value="dhcp" > <span class="mr-s">DHCP</span>
+										<input type="radio" name="address1" value="manual" checked> <span>Manual</span>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="col-md-4 compact-l">
+										<label class="m mt-s mb-xs">IP Address:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" >
+										<label class="m mt-m mb-xs">Primary DNS:</label>
+										<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" >
+									</div>
+									<div class="col-md-4 compact-l">
+										<label class="m mt-s mb-xs">Subnet:</label>
+										<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" >
+										<label class="m mt-m mb-xs">Secondary DNS:</label>
+										<input class="input-m mb-s" type="text" placeholder="8.8.4.4" value="8.8.4.4" >
+									</div>
+									<div class="col-md-4 compact-l">
+										<label class="m mt-s mb-xs">Gateway:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1">
+										<label class="m mt-m mb-xs">Domain:</label>
+										<input class="input-m" type="text" placeholder="google.com" value="google.com">
 									</div>
 								</div>
 							</div>
