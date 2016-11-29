@@ -53,21 +53,32 @@
 			background-color: #fff
 			border: 1px solid #D9DFE1
 			border-radius: 4px
-
-			.network-connection
+			
+			.network-list
+				box-sizing: border-box
+				height: 400px
+				overflow-x: scroll
 				border: 1px solid #CDD4D7
 				border-radius: 4px
+
+				.compact-l
+					padding: 0 0 0 6px
+				.compact-r
+					padding: 0 6px 0 0
+				.no-right-padding
+					padding-right: 0
+
+			.network-connection
 				padding: 10px
 				box-sizing: border-box
-
+				border-bottom: 1px solid #CDD4D7
+				
 				.network-status
 					vertical-align: top
-					margin-top: 15px
-					margin-left: 15px
 				.eth-port
 					position: absolute
-					top: 28px
-					left: 44px
+					top: 29px
+					left: 43px
 					font-size: 20px
 					font-family: $DattoDIN
 					font-weight: bold
@@ -77,7 +88,6 @@
 						color: $midnight-40
 				.status-tag
 					font-family: $secondary-font
-					padding: 5px 5px 5px 0px
 					font-size: 16px
 					line-height: 16px
 					font-weight: bold
