@@ -53,13 +53,18 @@
 			background-color: #fff
 			border: 1px solid #D9DFE1
 			border-radius: 4px
+			position: relative
+			overflow-y: scroll
+			overflow-x: hidden
+			position: relative
 			
 			.network-list
 				box-sizing: border-box
-				height: 400px
-				overflow-x: scroll
-				border: 1px solid #CDD4D7
-				border-radius: 4px
+				height: 450px
+				padding-top: 15px
+				padding-bottom: 15px
+				z-index: 1
+				position: relative
 
 				.compact-l
 					padding: 0 0 0 6px
@@ -71,7 +76,11 @@
 			.network-connection
 				padding: 10px
 				box-sizing: border-box
-				border-bottom: 1px solid #CDD4D7
+				border: 1px solid #CDD4D7
+				border-radius: 4px
+				margin-bottom: 15px
+				z-index: 4
+				position: relative
 				
 				.network-status
 					vertical-align: top
