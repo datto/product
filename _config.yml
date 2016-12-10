@@ -5,6 +5,9 @@ sass:
   sass_dir: _sass
   style: :compressed
 
+exclude:  
+  - README.md
+
 defaults:
   -
     scope:
