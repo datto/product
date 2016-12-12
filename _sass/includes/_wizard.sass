@@ -5,12 +5,16 @@
 	width: 80%
 	max-width: 960px
 	margin: 0 auto
+	+breakpoint($mobile)
+		text-align: center
+		margin-bottom: 10px 
 
 	.logo
 		margin-left: -40px
 		float: left
 		+breakpoint($mobile)
-			margin-left: -20px
+			margin: 0 auto
+			float: none
 
 .wizard
 	display: block
@@ -22,6 +26,7 @@
 	+breakpoint($mobile)
 		width: 80%
 		padding: $padding-s $padding-m $padding-s $padding-m
+		margin-bottom: 20px
 
 	h1
 		padding: 20px 0
