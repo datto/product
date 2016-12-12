@@ -5,18 +5,18 @@ layout: wizard_example
 ---
 
 <div class="wizard-branding">
-	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="f-left mb-m">
+	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="logo mb-m">
 </div>
-<div class="wizard pt-m pr-l pb-m pl-l">
-	<h1 class="pt-m pb-m">Device Registration</h1>
+<div class="wizard">
+	<h1>Device Registration</h1>
 	<div class="wizard-main">
 		<div class="steps">
 			<ul>
-				<li><a href="example1">Connect to Internet</a></li>
-				<li><a href="example1-2">Update Device</a></li>
-				<li><a href="#" class="active">Authorize Service</a><span class="icon icon-right-arrow fontSize-xl d-inlineBlock f-right"></li>
-				<li><a href="#" class="disabled">Configure Storage</a></li>
-				<li><a href="#" class="disabled">Create Account</a></li>
+				<li class="mobile-hide"><a href="example1">Connect to Internet</a></li>
+				<li class="mobile-hide"><a href="example1-2">Update Device</a></li>
+				<li><a href="#" class="active"><span class="mobile-step">Step 3 of 5 -</span> Authorize Service</a><span class="icon icon-right-arrow fontSize-xl d-inlineBlock f-right"></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Configure Storage</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Create Account</a></li>
 			</ul>
 		</div>
 		<div class="step-content pa-m pl-l">

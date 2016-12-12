@@ -24,3 +24,26 @@ $midnight-2: #F5F6F7
 $blue: #199ED9
 $light-blue: #51C6FE
 $dark-blue: #0080C6
+
+
+// Padding
+
+$padding-xs: 5px
+$padding-s: 10px
+$padding-m: 20px
+$padding-l: 40px
+$padding-xl: 80px
+
+// Breakpoints
+
+$mobile: 480px
+$tablet: 720px
+$desktop: 1280px
+$large-desktop: 1600px
+
+
+// Mixins
+
+=breakpoint($width)
+	@media (max-width: $width)
+		@content
