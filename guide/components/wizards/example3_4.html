@@ -1,0 +1,80 @@
+---
+title: Wizard Example 3 - Datto Product Design Guide
+permalink: /guide/components/wizards/example3_4
+layout: wizard_example
+---
+<div class="wizard-branding">
+	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="logo mb-s hide">
+</div>
+<div class="wizard pt-m pr-l pb-m pl-l">
+	<h1 class="pt-m pb-m">Add Backup Agent</h1>
+	<div class="wizard-main">
+		<div class="steps">
+			<ul>
+				<li class="mobile-hide"><a href="example3">Choose Backup Type</a></li>
+				<li class="mobile-hide"><a href="example3_1">Choose System</a></li>
+				<li class="mobile-hide"><a href="example3_2">Configure Local Backup</a></li>
+				<li class="mobile-hide"><a href="example3_3">Configure Cloud Backup</a></li>
+				<li><a href="#" class="active"><span class="mobile-step">Step 5 of 7 -</span> Verification Schedule</a><span class="icon icon-arrow-right fontSize-l d-inlineBlock f-right"></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Setup Alerts</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Review Settings</a></li>
+			</ul>
+		</div>
+		<div class="step-content">
+			<p>Choose the individual verification schedules for each of the different advanced module on your Datto device.</p>
+			<h3 class="mt-s mb-s">Screenshot Schedule</h3>
+			<p>Perform a screenshot verification of my system at:</p>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>the first backup of the day</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<h3 class="mt-m mb-s">Ransomware Check Schedule</h3>
+			<p>Perform a screenshot verification of my system at:</p>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>the first backup of the day</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<h3 class="mt-m mb-s">System Services Check Schedule</h3>
+			<p>Perform a screenshot verification of my system at:</p>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>the first backup of the day</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="action-bar">
+			<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example3_5'">Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
+			</button>
+		<button type="button" class="button tertiary f-right button--m mt-m" onclick="window.location.href='example3_3'">Previous</span>
+		</button>
+	</div>
+</div>

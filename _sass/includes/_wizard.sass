@@ -39,7 +39,7 @@
 				display: none !important
 		.steps
 			box-sizing: border-box
-			width: 20%
+			width: 22.5%
 			float: left
 			height: 100%
 			+breakpoint($mobile)
@@ -86,9 +86,9 @@
 							display: inline-block
 
 		.step-content
-			padding: $padding-m $padding-m $padding-m $padding-l
+			padding: 30px
 			box-sizing: border-box
-			width: 80%
+			width: 77.5%
 			float: left
 			height: 100%
 			background-color: #fff
@@ -101,7 +101,11 @@
 			+breakpoint($mobile)
 				width: 100%
 				padding: $padding-m
-			
+			.soft-alert
+				background-color: #FFFDE9
+				border: 1px solid #FCF4B3
+				padding: 5px
+				border-radius: 2px
 			.network-list
 				box-sizing: border-box
 				height: 450px
@@ -175,9 +179,10 @@
 							fill: red
 						.port 
 							fill: red
-
-			ul 
+			ul
 				list-style-type: none
+
+			ul.selection-list
 				border: 1px solid #E5E9EB
 				border-radius: 4px 
 				li 
@@ -199,6 +204,8 @@
 					.radio-description
 						color: $midnight-40
 						font-style: italic
+						+breakpoint($mobile)
+							display: none
 					.radio-tag
 						position: relative
 						top: 13px

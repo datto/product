@@ -1,0 +1,102 @@
+---
+title: Wizard Example 3 - Datto Product Design Guide
+permalink: /guide/components/wizards/example3_3
+layout: wizard_example
+---
+<div class="wizard-branding">
+	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="logo mb-s hide">
+</div>
+<div class="wizard pt-m pr-l pb-m pl-l">
+	<h1 class="pt-m pb-m">Add Backup Agent</h1>
+	<div class="wizard-main">
+		<div class="steps">
+			<ul>
+				<li class="mobile-hide"><a href="example3">Choose Backup Type</a></li>
+				<li class="mobile-hide"><a href="example3_1">Choose System</a></li>
+				<li class="mobile-hide"><a href="example3_2">Configure Local Backup</a></li>
+				<li><a href="#" class="active">Configure Cloud Backup</a><span class="icon icon-arrow-right fontSize-l d-inlineBlock f-right"></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Verification Schedule</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Setup Alerts</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Review Settings</a></li>
+			</ul>
+		</div>
+				<div class="step-content">
+			<p>Choose the backup and retention settings that you would like to storage in <b>Datto Cloud</b>.</p>
+			<div class="row">
+				<div class="col-md-3">
+					<label class="m mt-m mb-xs">Backup every:</label>
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>hour</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<label class="m mt-m mb-xs">starting at:</label>
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>9:00am</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<label class="m mt-m mb-xs">ending at:</label>
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>6:00pm</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<label class="m mt-m mb-xs">running on:</label>
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>weekdays</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-m">
+				<div class="col-md-6">
+					<label class="m mt-m mb-xs">Keep backups in the cloud for:</label>
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>3 months</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+		<div class="action-bar">
+			<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example3_4'">Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
+			</button>
+			<button type="button" class="button tertiary f-right button--m mt-m" onclick="window.location.href='example3_2'">Previous</span>
+		</button>
+		</div>
+	</div>

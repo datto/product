@@ -10,7 +10,8 @@ input:focus, textarea:focus, keygen:focus, select:focus
 \:-ms-input-placeholder
 	font-style: italic
 
-input
+input, select
+	background-color: #fff
 	box-sizing: border-box
 	width: 100%
 	border-radius: 2px
@@ -22,9 +23,19 @@ input
 		border-bottom: 3px solid $blue
 		border-collapse: collapse
 
+.select-wrapper
+	border: 1px solid $midnight-30
+	border-bottom: 3px solid $midnight-20
+	border-radius: 2px
+
+select
+	height: 40px
+	border: 0 !important
+
 input[type=radio]
 	width: auto
 	color: #355460
+	padding: 5px 0
 
 input[type=radio] + span
 	color: #355460
@@ -38,10 +49,11 @@ input[disabled]
 label, .label
 	display: block
 	font-family: $DattoDIN
-	text-transform: capitalize
 	font-weight: bold
-	font-size: 14px
+	font-size: 17px
 	color: $midnight-80
+	&.option
+		font-weight: normal
 
 .input-s
 	font-size: 14px

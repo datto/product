@@ -1,0 +1,41 @@
+---
+title: Wizard Example 3 - Datto Product Design Guide
+permalink: /guide/components/wizards/example3_5
+layout: wizard_example
+---
+<div class="wizard-branding">
+	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="logo mb-s hide">
+</div>
+<div class="wizard pt-m pr-l pb-m pl-l">
+	<h1 class="pt-m pb-m">Add Backup Agent</h1>
+	<div class="wizard-main">
+		<div class="steps">
+			<ul>
+				<li class="mobile-hide"><a href="example3">Choose Backup Type</a></li>
+				<li class="mobile-hide"><a href="example3_1">Choose System</a></li>
+				<li class="mobile-hide"><a href="example3_2">Configure Local Backup</a></li>
+				<li class="mobile-hide"><a href="example3_3">Configure Cloud Backup</a></li>
+				<li class="mobile-hide"><a href="example3_4">Verification Schedule</a></li>
+				<li class="mobile-hide"><a href="#" class="active"><span class="mobile-step">Step 6 of 7 -</span> Setup Alerts</a><span class="icon icon-arrow-right fontSize-l d-inlineBlock f-right"></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Review Settings</a></li>
+			</ul>
+		</div>
+		<div class="step-content">
+			<p>The following steps install software (an agent) on your target system that enables backups to your Datto appliance and the Datto cloud.</p>
+			<p class="soft-alert">(icon) Before proceeding, please review the <a href="#">Predeployment Checklist</a>.</p>
+			<h3 class="mt-m mb-s">How do we communicate with the system?</h3>
+			<p>To backup your system, Datto can either install an agent on the system or, for customers using VMWare, use the hypervisor to back up you system. Agents should be installed on your system before going through this wizard, and can be downloaded from partners.datto.com/downloads. </p>
+			<form class="mt-m">
+				<ul>
+					<li><input type="radio" name="system-type" value="Hyper" class="mb-s"><label class="d-inlineBlock pl-s fontSize-l">Hypervisor</label></li>
+					<li><input type="radio" name="system-type" value="Agent"><label class="d-inlineBlock pl-s fontSize-l">Agent</label></li>
+				</ul>
+			</form>
+		</div>
+		<div class="action-bar">
+			<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example3_6'">Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
+			</button>
+		<button type="button" class="button tertiary f-right button--m mt-m" onclick="window.location.href='example3_4'">Previous</span>
+		</button>
+	</div>
+</div>

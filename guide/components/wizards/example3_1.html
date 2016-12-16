@@ -1,0 +1,69 @@
+---
+title: Wizard Example 3 - Datto Product Design Guide
+permalink: /guide/components/wizards/example3_1
+layout: wizard_example
+---
+<div class="wizard-branding">
+	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="logo mb-s hide">
+</div>
+<div class="wizard pt-m pr-l pb-m pl-l">
+	<h1 class="pt-m pb-m">Add Backup Agent</h1>
+	<div class="wizard-main">
+		<div class="steps">
+			<ul>
+				<li class="mobile-hide"><a href="example3">Choose Backup Type</a></li>
+				<li><a href="#" class="active"><span class="mobile-step">Step 2 of 7 -</span> Choose System</a><span class="icon icon-arrow-right fontSize-l d-inlineBlock f-right"></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Configure Local Backup</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Configure Cloud Backup</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Verification Schedule</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Setup Alerts</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Review Settings</a></li>
+			</ul>
+		</div>
+		<div class="step-content">
+			<p class="compact">Enter the settings of the device you are looking to backup to this Datto appliance. </p>
+			<div class="row">
+				<div class="col-md-6">
+				<label class="m mt-m mb-xs">IP Address/Device Name</label>
+				<input class="input-m" type="text" placeholder="Placeholder text">
+				</div>
+				<div class="col-md-6"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<label class="m mt-m mb-xs">Do you want to copy settings from an existing system?</label>
+					<div class="select-wrapper">
+						<select class="input-m">
+							<option value="no" disabled selected>No thanks. I'll go ahead and enter the settings here.</option>
+							<option value="1">System 1</option>
+							<option value="2">System 2</option>
+							<option value="3">System 3</option>
+							<option value="4">System 4</option>
+							<option value="5">System 5</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+			<div>
+				<form class="mt-m">
+				<label class="m mt-m mb-xs">Do you want to encrypt your backups?</label>
+				<input type="radio" name="system-type" value="encrypt" class="mb-s"><label class="d-inlineBlock pl-xs fontSize-l option">Yes</label>
+				<input type="radio" name="system-type" value="encrypt" checked="checked" class="ml-m"><label class="d-inlineBlock pl-xs fontSize-l option">No</label>
+				</form>
+			</div>
+			<div>
+				<form class="mt-m">
+				<label class="m mt-m mb-xs">Do you want to enable deduplication for this system?</label>
+				<input type="radio" name="system-type" value="encrypt" class="mb-s"><label class="d-inlineBlock pl-xs fontSize-l option">Yes</label>
+				<input type="radio" name="system-type" value="encrypt" checked="checked" class="ml-m"><label class="d-inlineBlock pl-xs fontSize-l option">No</label>
+				</form>
+			</div>
+		</div>
+		<div class="action-bar">
+			<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example3_2'">Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
+			</button>
+			<button type="button" class="button tertiary f-right button--m mt-m" onclick="window.location.href='example3'">Previous</span>
+		</button>
+		</div>
+	</div>
