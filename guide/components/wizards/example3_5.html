@@ -21,16 +21,65 @@ layout: wizard_example
 			</ul>
 		</div>
 		<div class="step-content">
-			<p>The following steps install software (an agent) on your target system that enables backups to your Datto appliance and the Datto cloud.</p>
-			<p class="soft-alert">(icon) Before proceeding, please review the <a href="#">Predeployment Checklist</a>.</p>
-			<h3 class="mt-m mb-s">How do we communicate with the system?</h3>
-			<p>To backup your system, Datto can either install an agent on the system or, for customers using VMWare, use the hypervisor to back up you system. Agents should be installed on your system before going through this wizard, and can be downloaded from partners.datto.com/downloads. </p>
-			<form class="mt-m">
-				<ul>
-					<li><input type="radio" name="system-type" value="Hyper" class="mb-s"><label class="d-inlineBlock pl-s fontSize-l">Hypervisor</label></li>
-					<li><input type="radio" name="system-type" value="Agent"><label class="d-inlineBlock pl-s fontSize-l">Agent</label></li>
-				</ul>
-			</form>
+			<p>The following table will allow you to configure who you would like to receive email alerts.</p>
+			<table class="data-table mt-s">
+				<colgroup>
+				<col style="width: 37.5%">
+				<col style="width: 15%">
+				<col style="width: 15%">
+				<col style="width: 15%">
+				<col style="width: 15%">
+				<col style="width: 2.5%">
+				</colgroup>
+				<tr>
+					<th>Email</th>
+					<th class="center">Alert 1</th>
+					<th class="center">Alert 2</th>
+					<th class="center">Alert 3</th>
+					<th class="center">Alert 4</th>
+					<th ></th>
+				</tr>
+				<tr>
+					<td ><input class="no-border input-m" type="text" placeholder="Enter email address"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><span class="icon-cancel"></span></td>
+				</tr>
+				<tr>
+					<td ><input class="no-border input-m" type="text" placeholder="Enter email address"></td>
+					<td ><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td ><span class="icon-cancel"></span></td>
+				</tr>
+				<tr>
+					<td><input class="no-border input-m" type="text" placeholder="Enter email address"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><span class="icon-cancel"></span></td>
+				</tr>
+				<tr>
+					<td><input class="no-border input-m" type="text" placeholder="Enter email address"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><span class="icon-cancel"></span></td>
+				</tr>
+				<tr>
+					<td><input class="no-border input-m" type="text" placeholder="Enter email address"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><input type="checkbox" id="cbox" value="checkbox"></td>
+					<td><span class="icon-cancel"></span></td>
+				</tr>
+			</table>
 		</div>
 		<div class="action-bar">
 			<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='example3_6'">Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>

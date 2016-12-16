@@ -22,6 +22,8 @@ input, select
 		border-color: $blue
 		border-bottom: 3px solid $blue
 		border-collapse: collapse
+	&.no-border
+		border: 0
 
 .select-wrapper
 	border: 1px solid $midnight-30
@@ -39,6 +41,9 @@ input[type=radio]
 
 input[type=radio] + span
 	color: #355460
+
+input[type=checkbox]
+	width: auto
 
 input[disabled]
 	background: $midnight-5
