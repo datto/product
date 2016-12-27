@@ -1,0 +1,71 @@
+@-webkit-keyframes rotate-forever
+  0%
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  100%
+    -webkit-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -ms-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+@-moz-keyframes rotate-forever
+  0%
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+  100%
+    -webkit-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -ms-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+@keyframes rotate-forever
+  0%
+    -webkit-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -ms-transform: rotate(0deg)
+    -o-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+  100%
+    -webkit-transform: rotate(360deg)
+    -moz-transform: rotate(360deg)
+    -ms-transform: rotate(360deg)
+    -o-transform: rotate(360deg)
+    transform: rotate(360deg)
+
+=loading-spinner($spinner-size, $spinner-width, $spinner-color)
+  -webkit-animation-duration: 0.85s
+  -moz-animation-duration: 0.85s
+  animation-duration: 0.85s
+  -webkit-animation-iteration-count: infinite
+  -moz-animation-iteration-count: infinite
+  animation-iteration-count: infinite
+  -webkit-animation-name: rotate-forever
+  -moz-animation-name: rotate-forever
+  animation-name: rotate-forever
+  -webkit-animation-timing-function: linear
+  -moz-animation-timing-function: linear
+  animation-timing-function: linear
+  border-radius: 50%
+  height: $spinner-size
+  width: $spinner-size
+  border: $spinner-width solid $spinner-color
+  border-right-color: transparent
+  display: block
+  margin: 0 auto
+
+.loading-spinner-xs
+  +loading-spinner(16px, 2px, #aaa)
+
+.loading-spinner-xl
+  +loading-spinner(76px, 5px, #CDD4D7)
+  margin-top: 120px
+  margin-bottom: 70px
