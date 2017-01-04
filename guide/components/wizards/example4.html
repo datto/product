@@ -1,0 +1,217 @@
+---
+title: Wizard Example 4 (Bare Metal Restore) - Datto Product Design Guide
+permalink: /guide/components/wizards/example4
+layout: wizard_example
+---
+<div class="wizard-branding">
+	<img src="/guide/images/datto-logo.svg" alt="Datto Logo" class="hide logo mb-s">
+</div>
+<div class="wizard">
+	<h1>Bare Metal Restore</h1>
+	<div class="wizard-main">
+		<div class="steps">
+			<ul>
+				<li><a href="#" class="active"><span class="mobile-step">Step 1 of 5 -</span> Connect to Internet</a>
+				<span class="icon icon-right-arrow fontSize-xl f-right">
+				</li>
+				<li class="mobile-hide"><a href="#" class="disabled">Select Backup Device</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Select Machine</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Choose Recovery Point</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Create Partition</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Transfer Data</a></li>
+				<li class="mobile-hide"><a href="#" class="disabled">Review Restore</a></li>
+			</ul>
+		</div>
+		<div class="step-content">
+			<p>Choose the basic networking settings you would like to use to connect your device to the internet.</p>
+			<div class="network-list">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="network-connection">
+							<div class="row">
+								<div class="col-md-4 col-sm-12 no-right-padding">
+									<div class="col-md-12 col-sm-4">
+										<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="port">
+										Your browser does not support SVG
+										</object>
+										<span class="eth-port connected">0</span>
+									</div>
+									<div class="col-md-12 col-sm-4 status-col">
+										<span class="label">Status:</span>
+										<p class="status-tag connected">Connected to Internet</p>
+									</div>
+									<div class="col-md-12 col-sm-4 address-col">
+										<span class="label">Address Type:</span>
+										<input type="radio" name="address1" value="dhcp" checked> <span class="mr-s">DHCP</span>
+										<input type="radio" name="address1" value="manual"> <span>Manual</span>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">IP Address:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" disabled>
+										<label class="m mt-m mb-xs">Primary DNS:</label>
+										<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" disabled>
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Subnet:</label>
+										<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" disabled>
+										<label class="m mt-m mb-xs">Secondary DNS:</label>
+										<input class="input-m mb-s" type="text" placeholder="8.8.4.4" value="8.8.4.4" disabled>
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Gateway:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1" disabled>
+										<label class="m mt-m mb-xs">Domain:</label>
+										<input class="input-m" type="text" placeholder="google.com" value="google.com" disabled>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="network-connection">
+							<div class="row">
+								<div class="col-md-4 col-sm-12 no-right-padding">
+									<div class="col-md-12 col-sm-4">
+										<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="port">
+										Your browser does not support SVG
+										</object>
+										<span class="eth-port connected">1</span>
+									</div>
+									<div class="col-md-12 col-sm-4 status-col">
+										<span class="label">Status:</span>
+										<p class="status-tag connected">Connected to Internet</p>
+									</div>
+									<div class="col-md-12 col-sm-4 address-col">
+										<span class="label">Address Type:</span>
+										<input type="radio" name="address1" value="dhcp" checked> <span class="mr-s">DHCP</span>
+										<input type="radio" name="address1" value="manual"> <span>Manual</span>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">IP Address:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" >
+										<label class="m mt-m mb-xs">Primary DNS:</label>
+										<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" >
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Subnet:</label>
+										<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" >
+										<label class="m mt-m mb-xs">Secondary DNS:</label>
+										<input class="input-m mb-s" type="text" placeholder="8.8.4.4" value="8.8.4.4" >
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Gateway:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1">
+										<label class="m mt-m mb-xs">Domain:</label>
+										<input class="input-m" type="text" placeholder="google.com" value="google.com">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="network-connection">
+							<div class="row">
+								<div class="col-md-4 col-sm-12 no-right-padding">
+									<div class="col-md-12 col-sm-4">
+										<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="port">
+										Your browser does not support SVG
+										</object>
+										<span class="eth-port connected">2</span>
+									</div>
+									<div class="col-md-12 col-sm-4 status-col">
+										<span class="label">Status:</span>
+										<p class="status-tag connected">Connected to Internet</p>
+									</div>
+									<div class="col-md-12 col-sm-4 address-col">
+										<span class="label">Address Type:</span>
+										<input type="radio" name="address1" value="dhcp" checked> <span class="mr-s">DHCP</span>
+										<input type="radio" name="address1" value="manual"> <span>Manual</span>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">IP Address:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" >
+										<label class="m mt-m mb-xs">Primary DNS:</label>
+										<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" >
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Subnet:</label>
+										<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" >
+										<label class="m mt-m mb-xs">Secondary DNS:</label>
+										<input class="input-m mb-s" type="text" placeholder="8.8.4.4" value="8.8.4.4" >
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Gateway:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1">
+										<label class="m mt-m mb-xs">Domain:</label>
+										<input class="input-m" type="text" placeholder="google.com" value="google.com">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="network-connection">
+							<div class="row">
+								<div class="col-md-4 col-sm-12 no-right-padding">
+									<div class="col-md-12 col-sm-4">
+										<object type="image/svg+xml" data="/guide/images/ethernet.svg" class="port">
+										Your browser does not support SVG
+										</object>
+										<span class="eth-port connected">3</span>
+									</div>
+									<div class="col-md-12 col-sm-4 status-col">
+										<span class="label">Status:</span>
+										<p class="status-tag connected">Connected to Internet</p>
+									</div>
+									<div class="col-md-12 col-sm-4 address-col">
+										<span class="label">Address Type:</span>
+										<input type="radio" name="address1" value="dhcp" checked> <span class="mr-s">DHCP</span>
+										<input type="radio" name="address1" value="manual"> <span>Manual</span>
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">IP Address:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.25" value="10.1.1.25" disabled>
+										<label class="m mt-m mb-xs">Primary DNS:</label>
+										<input class="input-m" type="text" placeholder="8.8.8.8" value="8.8.8.8" disabled>
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Subnet:</label>
+										<input class="input-m" type="text" placeholder="255.255.255.0" value="255.255.255.0" disabled>
+										<label class="m mt-m mb-xs">Secondary DNS:</label>
+										<input class="input-m mb-s" type="text" placeholder="8.8.4.4" value="8.8.4.4" disabled>
+									</div>
+									<div class="col-md-4 col-sm-4 compact-l">
+										<label class="m mt-s mb-xs">Gateway:</label>
+										<input class="input-m" type="text" placeholder="10.1.1.1" value="10.1.1.1" disabled>
+										<label class="m mt-m mb-xs">Domain:</label>
+										<input class="input-m" type="text" placeholder="google.com" value="google.com" disabled>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="action-bar">
+		<button type="button" class="button primary button--m button-icon mt-m f-right" onclick="window.location.href='#'">
+		Next <span class="icon icon-right-arrow fontSize-xl d-inlineBlock"></span>
+		</button>
+	</div>
+</div>
