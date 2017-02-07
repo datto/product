@@ -1,0 +1,209 @@
+---
+# Jekyll front-matter block required so that Jekyll processes our SASS
+---
+
+$primaryNavHeight: 50px
+
+$portalColor: #333
+$portalColorLite: #666
+
+$continuityColor: #87CD4B
+$networkingColor: #FF8D48
+$saasColor: #C65B51
+
+body
+	margin: 0
+	padding: 0
+	background-color: #fff
+	font-family: Roboto
+	-webkit-font-smoothing: antialiased
+	-webkit-transform: translate3d(0, 0, 0)
+
+body, html
+	height: 100%
+	box-sizing: border-box
+
+.wrapper
+	max-width: 1080px
+	margin: 0 auto
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+	li
+		display: table
+		float: left
+nav
+	display: block
+	width: 100%
+	height: $primaryNavHeight
+	color: #fff
+
+	&.portal
+		background-color: $portalColor
+	&.continuity
+		background-color: $continuityColor
+
+	.wrapper
+		height: $primaryNavHeight
+		
+	.regionID
+		display: flex
+		align-items: center
+		min-width: 200px
+		height: $primaryNavHeight
+		float: left
+		font-weight: 700
+
+		.logo-svg
+			height: 20px
+			display: flex
+			margin: 0 0px 0 5px
+
+		.float-right
+			float: right
+
+		.fa
+			font-size: .8em
+			line-height: 22px !important
+
+		dropdown
+			display: flex
+			width: 75px
+			height: 50px
+
+		dropdown label, dropdown ul li
+			display: block
+			width: 100px
+			padding: 15px 20px
+
+		dropdown label:hover, dropdown ul li:hover
+			cursor: pointer
+
+		dropdown label
+			color: #fff
+			border-radius: 0 5px 0 0
+			position: relative
+			z-index: 2
+			span
+				background: $portalColorLite
+				padding: 5px 10px
+				border-radius: 6px
+
+		dropdown input
+			display: none
+
+		dropdown input ~ ul
+			position: relative
+			visibility: hidden
+			opacity: 0
+			top: -20px
+			z-index: 1
+
+		dropdown input:checked + label
+			color: white
+
+		dropdown input:checked ~ ul
+			visibility: visible
+			opacity: 1
+			top: 34px
+			left: -82px
+			margin: 0
+			padding: 0
+
+		dropdown ul li:nth-child(1)
+			border-left: 6px solid $continuityColor
+			background: $portalColorLite
+			padding: 15px 20px
+			border-radius: 0 6px 0 0
+		dropdown ul li:nth-child(1) .fa
+			color: #E74C3C
+		dropdown ul li:nth-child(1):hover
+			color: white
+		dropdown ul li:nth-child(1):hover .fa
+			color: white
+
+		dropdown ul li:nth-child(2)
+			border-left: 6px solid $networkingColor
+			background: $portalColorLite
+			padding: 15px 20px
+		dropdown ul li:nth-child(2) .fa
+			color: #0072B5
+		dropdown ul li:nth-child(2):hover
+			color: white
+		dropdown ul li:nth-child(2):hover .fa
+			color: white
+
+		dropdown ul li:nth-child(3)
+			border-left: 6px solid $saasColor
+			background: $portalColorLite
+			padding: 15px 20px
+			border-radius: 0 0 6px 6px
+		dropdown ul li:nth-child(3) .fa
+			color: #2C3E50
+		dropdown ul li:nth-child(3):hover
+			color: white
+		dropdown ul li:nth-child(3):hover .fa
+			color: white
+
+		.animate
+			span 
+				margin-left: 0px
+
+	.regionNav
+		display: flex
+		align-items: center
+		max-width: 85%
+		min-width: 400px 
+		height: $primaryNavHeight
+		float: left
+		ul 
+			list-style-type: none
+			display: flex
+			font-size: 15px
+			padding: 0
+			margin: 0
+			li 
+				display: inline-block
+				padding: 0 30px 0 0
+	.infoID
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		min-width: 40px 
+		height: $primaryNavHeight
+		float: right
+		.avatar
+			display: flex
+			background-color: #ccc
+			width: 30px
+			height: 30px
+			border-radius: 50%
+
+.headerBar
+	display: block
+	height: 60px
+	background-color: #eee
+	color: #333
+	.headerID
+		display: flex
+		align-items: center
+		height: 60px
+		width: 150px
+		float: left
+		h1
+			display: flex
+			font-size: 28px
+			padding: 0
+			margin: 0
+	.subNav
+		display: flex
+		align-items: center
+		width: 50% 
+		height: 60px
+		float: right
+		justify-content: flex-end
+		ul li 
+			margin-left: 15px
+
