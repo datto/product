@@ -50,3 +50,11 @@ $large-desktop: 1920px
 =breakpoint($width)
 	@media (min-width: $width)
 		@content
+
+=breakpoint-up($width)
+	@media (max-width: $width)
+		@content
+
+=breakpoint-down($width)
+	@media (min-width: $width)
+		@content
