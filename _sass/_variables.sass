@@ -42,11 +42,11 @@ $padding-xl: 80px
 $mobile: 480px
 $tablet: 720px
 $desktop: 1280px
-$large-desktop: 1600px
+$large-desktop: 1920px
 
 
 // Mixins
 
 =breakpoint($width)
-	@media (max-width: $width)
+	@media (min-width: $width)
 		@content
